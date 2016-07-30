@@ -1,6 +1,6 @@
 ﻿namespace Inventarios.WinForms
 {
-    partial class UIGeneracionListaProductoTerminado
+    partial class UIGeneracionReporteParaProductoTerminado
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UIGeneracionListaProductoTerminado));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UIGeneracionReporteParaProductoTerminado));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();

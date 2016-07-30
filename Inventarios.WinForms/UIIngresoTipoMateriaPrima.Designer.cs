@@ -88,8 +88,8 @@
             this.tsbSalir.Image = ((System.Drawing.Image)(resources.GetObject("tsbSalir.Image")));
             this.tsbSalir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSalir.Name = "tsbSalir";
-            this.tsbSalir.Size = new System.Drawing.Size(40, 45);
-            this.tsbSalir.Text = "Salir";
+            this.tsbSalir.Size = new System.Drawing.Size(72, 45);
+            this.tsbSalir.Text = "Regresar";
             this.tsbSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbSalir.ToolTipText = "Cerrar la pantalla actual";
             this.tsbSalir.Click += new System.EventHandler(this.tsbSalir_Click);
@@ -138,9 +138,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(55, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.Size = new System.Drawing.Size(98, 13);
             this.label2.TabIndex = 44;
-            this.label2.Text = "Código";
+            this.label2.Text = "IdTipoMateriaPrima";
             // 
             // textBox1
             // 

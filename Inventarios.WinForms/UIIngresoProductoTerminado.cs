@@ -94,5 +94,15 @@ namespace Inventarios.WinForms
             textBox4.Text = "";
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

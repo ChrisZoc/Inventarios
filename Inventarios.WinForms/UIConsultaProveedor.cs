@@ -69,5 +69,20 @@ namespace Inventarios.WinForms
        
        
         #endregion Form Event Handlers
+
+        private void gpbBusqueda_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lsvProductos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

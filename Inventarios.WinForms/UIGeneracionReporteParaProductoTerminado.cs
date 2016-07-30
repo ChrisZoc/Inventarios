@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Inventarios.WinForms
 {
-    public partial class UIGeneracionListaProductoTerminado : Form
+    public partial class UIGeneracionReporteParaProductoTerminado : Form
     {
-        public UIGeneracionListaProductoTerminado()
+        public UIGeneracionReporteParaProductoTerminado()
         {
             InitializeComponent();
         }
