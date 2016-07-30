@@ -43,5 +43,15 @@ namespace Inventarios.WinForms
             Close();
         }
 
+        private void Buscar_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

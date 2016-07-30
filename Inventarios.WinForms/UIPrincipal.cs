@@ -13,15 +13,17 @@ namespace Inventarios.WinForms
         UIIngresoCompraMateriaPrima frmIngresarCompraMateriaPrima;
         UIModificarCompraMateriaPrima frmModificarCompraMateriaPrima;
         UIEliminacionCompraMateriaPrima frmEliminacionCompraMateriaPrima;
-        UIModificacionMateriaPrima frmModificacionMateriaPrima;
+        UIDevolucionMateriaPrima frmModificacionMateriaPrima;
         UILotizacionMateriaPrima frmLotizacionMateriaPrima;
-        UIGeneracionListaProductoTerminado frmGeneracionListaProductoTerminado;
+        UIGeneracionReporteParaProductoTerminado frmGeneracionListaProductoTerminado;
         UIIngresoProductoTerminado frmIngresoProductoTerminado;
         UIConsultarProductoTerminado frmConsultarProductoTerminado;
         UIModificaciónProductoTerminado frmModificaciónProductoTerminado;
         UIEliminacionProductoTerminado frmEliminacionProductoTerminado;
         UIModificacionProveedor frmModificacionProveedor;
         UIEliminacionProveedor frmEliminacionProveedor;
+        UIConsultarCompraMateriaPrima frmConsultarCompraMateriaPrima;
+        UIConsultarTipoMateriaPrima frmConsultarTipoMateriaPrima;
         public UIPrincipal()
         {
             InitializeComponent();
@@ -125,7 +127,7 @@ namespace Inventarios.WinForms
         {
             
                  if (frmModificacionMateriaPrima == null || frmModificacionMateriaPrima.IsDisposed)
-                frmModificacionMateriaPrima = new UIModificacionMateriaPrima();
+                frmModificacionMateriaPrima = new UIDevolucionMateriaPrima();
 
             frmModificacionMateriaPrima.MdiParent = this;
             frmModificacionMateriaPrima.Show();
@@ -146,7 +148,7 @@ namespace Inventarios.WinForms
         private void generarListaProductoTerminadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (frmGeneracionListaProductoTerminado == null || frmGeneracionListaProductoTerminado.IsDisposed)
-               frmGeneracionListaProductoTerminado = new UIGeneracionListaProductoTerminado();
+               frmGeneracionListaProductoTerminado = new UIGeneracionReporteParaProductoTerminado();
 
             frmGeneracionListaProductoTerminado.MdiParent = this;
             frmGeneracionListaProductoTerminado.Show();
@@ -212,6 +214,34 @@ namespace Inventarios.WinForms
             frmEliminacionProveedor.MdiParent = this;
             frmEliminacionProveedor.Show();
             frmEliminacionProveedor.BringToFront();
+        }
+
+        private void proveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void modificacionMateriaPrimaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmConsultarTipoMateriaPrima == null || frmConsultarTipoMateriaPrima.IsDisposed)
+                frmConsultarTipoMateriaPrima = new UIConsultarTipoMateriaPrima();
+
+            frmConsultarTipoMateriaPrima.Show();
+            frmConsultarTipoMateriaPrima.BringToFront();
+        }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmConsultarCompraMateriaPrima == null || frmConsultarCompraMateriaPrima.IsDisposed)
+                frmConsultarCompraMateriaPrima = new UIConsultarCompraMateriaPrima();
+
+            frmConsultarCompraMateriaPrima.Show();
+            frmConsultarCompraMateriaPrima.BringToFront();
         }
     }
 }

@@ -11,6 +11,8 @@ namespace Inventarios.WinForms
     public partial class UIIngresoProveedor : Form
     {
         readonly IProductoService productoService;
+        UIIngresoTipoMateriaPrima frmIngTipoMateriaPrima;
+
 
         public UIIngresoProveedor()
         {
@@ -83,6 +85,15 @@ namespace Inventarios.WinForms
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tsbIngresarTipoMP_Click(object sender, EventArgs e)
+        {
+            if (frmIngTipoMateriaPrima == null || frmIngTipoMateriaPrima.IsDisposed)
+                frmIngTipoMateriaPrima = new UIIngresoTipoMateriaPrima();
+
+            frmIngTipoMateriaPrima.Show();
+            frmIngTipoMateriaPrima.BringToFront();
         }
     }
 }

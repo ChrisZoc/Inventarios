@@ -8,11 +8,11 @@ using Inventarios.WinForms.SingletonModels;
 
 namespace Inventarios.WinForms
 {
-    public partial class UIModificacionMateriaPrima : Form
+    public partial class UIConsultarTipoMateriaPrima : Form
     {
         readonly IProductoService productoService;
 
-        public UIModificacionMateriaPrima()
+        public UIConsultarTipoMateriaPrima()
         {
             InitializeComponent();
             productoService = new ProductoService(new AlmacenORMDataContext());
@@ -23,10 +23,23 @@ namespace Inventarios.WinForms
             Close();
         }
 
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtCodigo.Enabled = false;
+            txtNombre.Enabled = true;
+
+        }
+
+        private void rbtCodigo_CheckedChanged(object sender, EventArgs e)
+        {
+            txtNombre.Enabled = false;
+            txtCodigo.Enabled = true;
+        }
+
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
-            textBox13.Text = "";
-            textBox9.Text = "";
+            txtNombre.Text = "";
+            txtCodigo.Text = "";
 
         }
 

@@ -32,8 +32,8 @@
             this.tlsBarraMenu = new System.Windows.Forms.ToolStrip();
             this.tsbBuscar = new System.Windows.Forms.ToolStripButton();
             this.tsbSalir = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.tsbGuardar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -58,6 +58,10 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tlsBarraMenu.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.Buscar.SuspendLayout();
@@ -99,11 +103,22 @@
             this.tsbSalir.Image = ((System.Drawing.Image)(resources.GetObject("tsbSalir.Image")));
             this.tsbSalir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSalir.Name = "tsbSalir";
-            this.tsbSalir.Size = new System.Drawing.Size(40, 45);
-            this.tsbSalir.Text = "Salir";
+            this.tsbSalir.Size = new System.Drawing.Size(72, 45);
+            this.tsbSalir.Text = "Regresar";
             this.tsbSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbSalir.ToolTipText = "Cerrar la pantalla actual";
             this.tsbSalir.Click += new System.EventHandler(this.tsbSalir_Click);
+            // 
+            // tsbGuardar
+            // 
+            this.tsbGuardar.ForeColor = System.Drawing.Color.DimGray;
+            this.tsbGuardar.Image = ((System.Drawing.Image)(resources.GetObject("tsbGuardar.Image")));
+            this.tsbGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbGuardar.Name = "tsbGuardar";
+            this.tsbGuardar.Size = new System.Drawing.Size(64, 45);
+            this.tsbGuardar.Text = "Guardar";
+            this.tsbGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbGuardar.ToolTipText = "Guarda el lote en el registro";
             // 
             // toolStripButton2
             // 
@@ -116,17 +131,6 @@
             this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButton2.ToolTipText = "Cancela el registro actual";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
-            // 
-            // tsbGuardar
-            // 
-            this.tsbGuardar.ForeColor = System.Drawing.Color.DimGray;
-            this.tsbGuardar.Image = ((System.Drawing.Image)(resources.GetObject("tsbGuardar.Image")));
-            this.tsbGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbGuardar.Name = "tsbGuardar";
-            this.tsbGuardar.Size = new System.Drawing.Size(64, 45);
-            this.tsbGuardar.Text = "Guardar";
-            this.tsbGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tsbGuardar.ToolTipText = "Guarda el lote en el registro";
             // 
             // toolStripButton3
             // 
@@ -142,6 +146,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.textBox8);
             this.groupBox1.Controls.Add(this.textBox10);
             this.groupBox1.Controls.Add(this.label11);
@@ -150,9 +155,9 @@
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.textBox12);
             this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Location = new System.Drawing.Point(12, 151);
+            this.groupBox1.Location = new System.Drawing.Point(12, 130);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(493, 148);
+            this.groupBox1.Size = new System.Drawing.Size(493, 153);
             this.groupBox1.TabIndex = 33;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Campos";
@@ -227,19 +232,21 @@
             // 
             // Buscar
             // 
+            this.Buscar.Controls.Add(this.btnBuscar);
             this.Buscar.Controls.Add(this.label15);
             this.Buscar.Controls.Add(this.textBox13);
             this.Buscar.Location = new System.Drawing.Point(12, 64);
             this.Buscar.Name = "Buscar";
-            this.Buscar.Size = new System.Drawing.Size(493, 81);
+            this.Buscar.Size = new System.Drawing.Size(493, 60);
             this.Buscar.TabIndex = 32;
             this.Buscar.TabStop = false;
             this.Buscar.Text = "Buscar";
+            this.Buscar.Enter += new System.EventHandler(this.Buscar_Enter);
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(36, 29);
+            this.label15.Location = new System.Drawing.Point(61, 31);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(55, 13);
             this.label15.TabIndex = 1;
@@ -247,22 +254,24 @@
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(128, 29);
+            this.textBox13.Location = new System.Drawing.Point(137, 28);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
+            this.textBox13.Size = new System.Drawing.Size(119, 20);
             this.textBox13.TabIndex = 0;
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(12, 317);
+            this.groupBox2.Location = new System.Drawing.Point(12, 289);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(493, 232);
+            this.groupBox2.Size = new System.Drawing.Size(493, 220);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Lotes";
@@ -276,7 +285,7 @@
             this.tipoMateriaPrima,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(22, 112);
+            this.dataGridView1.Location = new System.Drawing.Point(23, 133);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(445, 81);
             this.dataGridView1.TabIndex = 24;
@@ -303,7 +312,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(137, 55);
+            this.textBox2.Location = new System.Drawing.Point(137, 80);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(119, 20);
@@ -312,7 +321,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 32);
+            this.label1.Location = new System.Drawing.Point(38, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 22;
@@ -321,7 +330,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(137, 29);
+            this.textBox3.Location = new System.Drawing.Point(137, 54);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(119, 20);
@@ -330,26 +339,60 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 58);
+            this.label2.Location = new System.Drawing.Point(38, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 13);
+            this.label2.Size = new System.Drawing.Size(80, 13);
             this.label2.TabIndex = 20;
-            this.label2.Text = "Cantidad actual (lb)";
+            this.label2.Text = "Peso actual (lb)";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(244, 96);
+            this.label4.Location = new System.Drawing.Point(20, 117);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(133, 13);
             this.label4.TabIndex = 15;
             this.label4.Text = "Compras que lo conforman";
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(313, 25);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(108, 23);
+            this.btnBuscar.TabIndex = 2;
+            this.btnBuscar.Text = "Ver";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(313, 58);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 23);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Agregar al Lote";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(38, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Nombre";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(137, 28);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(119, 20);
+            this.textBox1.TabIndex = 25;
+            // 
             // UILotizacionMateriaPrima
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(520, 583);
+            this.ClientSize = new System.Drawing.Size(520, 521);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Buscar);
@@ -404,5 +447,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoMateriaPrima;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

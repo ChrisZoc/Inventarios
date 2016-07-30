@@ -26,3 +26,10 @@ C:\Users\Christian\Desktop\inventarios-master\Inventarios.ApplicationControl\bin
 C:\Users\Christian\Desktop\inventarios-master\Inventarios.ApplicationControl\obj\Debug\Inventarios.ApplicationControl.csprojResolveAssemblyReference.cache
 C:\Users\Christian\Desktop\inventarios-master\Inventarios.ApplicationControl\obj\Debug\Inventarios.ApplicationControl.dll
 C:\Users\Christian\Desktop\inventarios-master\Inventarios.ApplicationControl\obj\Debug\Inventarios.ApplicationControl.pdb
+C:\Users\Christian\Documents\GitHub\Inventarios\Inventarios.ApplicationControl\bin\Debug\Inventarios.ApplicationControl.dll
+C:\Users\Christian\Documents\GitHub\Inventarios\Inventarios.ApplicationControl\bin\Debug\Inventarios.ApplicationControl.pdb
+C:\Users\Christian\Documents\GitHub\Inventarios\Inventarios.ApplicationControl\bin\Debug\Inventarios.Core.dll
+C:\Users\Christian\Documents\GitHub\Inventarios\Inventarios.ApplicationControl\bin\Debug\Inventarios.Core.pdb
+C:\Users\Christian\Documents\GitHub\Inventarios\Inventarios.ApplicationControl\obj\Debug\Inventarios.ApplicationControl.csprojResolveAssemblyReference.cache
+C:\Users\Christian\Documents\GitHub\Inventarios\Inventarios.ApplicationControl\obj\Debug\Inventarios.ApplicationControl.dll
+C:\Users\Christian\Documents\GitHub\Inventarios\Inventarios.ApplicationControl\obj\Debug\Inventarios.ApplicationControl.pdb

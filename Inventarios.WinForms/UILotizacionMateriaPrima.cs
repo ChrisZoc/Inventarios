@@ -53,6 +53,11 @@ namespace Inventarios.WinForms
             frmIngresoCompraMateriaPrima.BringToFront();
         }
 
+        private void Buscar_Enter(object sender, EventArgs e)
+        {
+
+        }
+
       
 
     }

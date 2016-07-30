@@ -34,7 +34,10 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.tsbCancelar = new System.Windows.Forms.ToolStripButton();
             this.tsbSalir = new System.Windows.Forms.ToolStripButton();
+            this.tsbIngresarTipoMP = new System.Windows.Forms.ToolStripButton();
             this.gpbAlta = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -55,7 +58,8 @@
             this.tsbNuevo,
             this.toolStripButton1,
             this.tsbCancelar,
-            this.tsbSalir});
+            this.tsbSalir,
+            this.tsbIngresarTipoMP});
             this.tlsBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.tlsBarraMenu.Name = "tlsBarraMenu";
             this.tlsBarraMenu.Size = new System.Drawing.Size(571, 48);
@@ -110,11 +114,25 @@
             this.tsbSalir.ToolTipText = "Cerrar la forma";
             this.tsbSalir.Click += new System.EventHandler(this.tsbSalir_Click);
             // 
+            // tsbIngresarTipoMP
+            // 
+            this.tsbIngresarTipoMP.ForeColor = System.Drawing.Color.DimGray;
+            this.tsbIngresarTipoMP.Image = ((System.Drawing.Image)(resources.GetObject("tsbIngresarTipoMP.Image")));
+            this.tsbIngresarTipoMP.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbIngresarTipoMP.Name = "tsbIngresarTipoMP";
+            this.tsbIngresarTipoMP.Size = new System.Drawing.Size(192, 45);
+            this.tsbIngresarTipoMP.Text = "Ingresar Tipo Materia Prima";
+            this.tsbIngresarTipoMP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbIngresarTipoMP.ToolTipText = "Abre una ventana de ingreso tipo materia prima ";
+            this.tsbIngresarTipoMP.Click += new System.EventHandler(this.tsbIngresarTipoMP_Click);
+            // 
             // gpbAlta
             // 
             this.gpbAlta.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.gpbAlta.Controls.Add(this.comboBox1);
+            this.gpbAlta.Controls.Add(this.label2);
             this.gpbAlta.Controls.Add(this.textBox2);
             this.gpbAlta.Controls.Add(this.label1);
             this.gpbAlta.Controls.Add(this.textBox1);
@@ -125,25 +143,42 @@
             this.gpbAlta.Controls.Add(this.label9);
             this.gpbAlta.Location = new System.Drawing.Point(12, 87);
             this.gpbAlta.Name = "gpbAlta";
-            this.gpbAlta.Size = new System.Drawing.Size(547, 148);
+            this.gpbAlta.Size = new System.Drawing.Size(547, 185);
             this.gpbAlta.TabIndex = 32;
             this.gpbAlta.TabStop = false;
             this.gpbAlta.Text = "Ingresar Proveedor";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(152, 139);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(129, 21);
+            this.comboBox1.TabIndex = 47;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(43, 144);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 13);
+            this.label2.TabIndex = 46;
+            this.label2.Text = "Tipo Materia Prima";
             // 
             // textBox2
             // 
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(122, 35);
+            this.textBox2.Location = new System.Drawing.Point(152, 35);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(159, 20);
+            this.textBox2.Size = new System.Drawing.Size(129, 20);
             this.textBox2.TabIndex = 44;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(56, 39);
+            this.label1.Location = new System.Drawing.Point(70, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 45;
@@ -153,52 +188,54 @@
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(122, 61);
+            this.textBox1.Location = new System.Drawing.Point(152, 61);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 20);
+            this.textBox1.Size = new System.Drawing.Size(129, 20);
             this.textBox1.TabIndex = 34;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(56, 117);
+            this.label4.Location = new System.Drawing.Point(98, 116);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(28, 13);
+            this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 43;
-            this.label4.Text = "Tipo";
+            this.label4.Text = "Estado";
             // 
             // txtDireccion
             // 
             this.txtDireccion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDireccion.Location = new System.Drawing.Point(122, 87);
+            this.txtDireccion.Location = new System.Drawing.Point(152, 87);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(401, 20);
+            this.txtDireccion.Size = new System.Drawing.Size(129, 20);
             this.txtDireccion.TabIndex = 38;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(56, 91);
+            this.label3.Location = new System.Drawing.Point(78, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 42;
-            this.label3.Text = "Dirección";
+            this.label3.Text = "Comunidad";
             // 
             // txtTelefono
             // 
             this.txtTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTelefono.Location = new System.Drawing.Point(122, 113);
+            this.txtTelefono.Enabled = false;
+            this.txtTelefono.Location = new System.Drawing.Point(152, 113);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(401, 20);
+            this.txtTelefono.Size = new System.Drawing.Size(129, 20);
             this.txtTelefono.TabIndex = 39;
+            this.txtTelefono.Text = "Activo";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(56, 65);
+            this.label9.Location = new System.Drawing.Point(94, 64);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(44, 13);
             this.label9.TabIndex = 40;
@@ -208,7 +245,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(571, 258);
+            this.ClientSize = new System.Drawing.Size(571, 295);
             this.Controls.Add(this.tlsBarraMenu);
             this.Controls.Add(this.gpbAlta);
             this.MinimumSize = new System.Drawing.Size(587, 258);
@@ -241,5 +278,8 @@
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripButton tsbIngresarTipoMP;
     }
 }

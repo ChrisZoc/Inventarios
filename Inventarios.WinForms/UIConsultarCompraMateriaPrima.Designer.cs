@@ -1,6 +1,6 @@
 ﻿namespace Inventarios.WinForms
 {
-    partial class UIEliminacionCompraMateriaPrima
+    partial class UIConsultarCompraMateriaPrima
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UIEliminacionCompraMateriaPrima));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UIConsultarCompraMateriaPrima));
             this.tlsBarraMenu = new System.Windows.Forms.ToolStrip();
-            this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
+            this.tsbBuscar = new System.Windows.Forms.ToolStripButton();
             this.tsbSalir = new System.Windows.Forms.ToolStripButton();
-            this.tsbCancelar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,25 +58,25 @@
             this.tlsBarraMenu.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tlsBarraMenu.ImageScalingSize = new System.Drawing.Size(25, 25);
             this.tlsBarraMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbEliminar,
+            this.tsbBuscar,
             this.tsbSalir,
-            this.tsbCancelar});
+            this.toolStripButton3});
             this.tlsBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.tlsBarraMenu.Name = "tlsBarraMenu";
-            this.tlsBarraMenu.Size = new System.Drawing.Size(586, 48);
+            this.tlsBarraMenu.Size = new System.Drawing.Size(811, 48);
             this.tlsBarraMenu.TabIndex = 29;
             this.tlsBarraMenu.Text = "Menu de articulos";
             // 
-            // tsbEliminar
+            // tsbBuscar
             // 
-            this.tsbEliminar.ForeColor = System.Drawing.Color.DimGray;
-            this.tsbEliminar.Image = ((System.Drawing.Image)(resources.GetObject("tsbEliminar.Image")));
-            this.tsbEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbEliminar.Name = "tsbEliminar";
-            this.tsbEliminar.Size = new System.Drawing.Size(61, 45);
-            this.tsbEliminar.Text = "Eliminar";
-            this.tsbEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tsbEliminar.ToolTipText = "Guarda los datos de un registro";
+            this.tsbBuscar.ForeColor = System.Drawing.Color.DimGray;
+            this.tsbBuscar.Image = ((System.Drawing.Image)(resources.GetObject("tsbBuscar.Image")));
+            this.tsbBuscar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbBuscar.Name = "tsbBuscar";
+            this.tsbBuscar.Size = new System.Drawing.Size(56, 45);
+            this.tsbBuscar.Text = "Buscar";
+            this.tsbBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbBuscar.ToolTipText = "Busca una compra de materia prima";
             // 
             // tsbSalir
             // 
@@ -91,17 +91,17 @@
             this.tsbSalir.ToolTipText = "Cerrar la pantalla actual";
             this.tsbSalir.Click += new System.EventHandler(this.tsbSalir_Click);
             // 
-            // tsbCancelar
+            // toolStripButton3
             // 
-            this.tsbCancelar.ForeColor = System.Drawing.Color.DimGray;
-            this.tsbCancelar.Image = ((System.Drawing.Image)(resources.GetObject("tsbCancelar.Image")));
-            this.tsbCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbCancelar.Name = "tsbCancelar";
-            this.tsbCancelar.Size = new System.Drawing.Size(68, 45);
-            this.tsbCancelar.Text = "Cancelar";
-            this.tsbCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tsbCancelar.ToolTipText = "Cancela el registro actual";
-            this.tsbCancelar.Click += new System.EventHandler(this.tsbGuardar_Click);
+            this.toolStripButton3.ForeColor = System.Drawing.Color.DimGray;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(68, 45);
+            this.toolStripButton3.Text = "Cancelar";
+            this.toolStripButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton3.ToolTipText = "Cancela el registro actual";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // groupBox2
             // 
@@ -117,12 +117,13 @@
             this.groupBox2.Controls.Add(this.lblProveedor);
             this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(12, 64);
+            this.groupBox2.Location = new System.Drawing.Point(21, 64);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(547, 227);
+            this.groupBox2.Size = new System.Drawing.Size(778, 223);
             this.groupBox2.TabIndex = 48;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Buscar";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // dateTimePicker2
             // 
@@ -149,9 +150,9 @@
             this.Comunidad,
             this.TipoMateriaPrima,
             this.Semana});
-            this.dataGridView1.Location = new System.Drawing.Point(27, 87);
+            this.dataGridView1.Location = new System.Drawing.Point(48, 89);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(493, 118);
+            this.dataGridView1.Size = new System.Drawing.Size(641, 118);
             this.dataGridView1.TabIndex = 52;
             // 
             // IdCompra
@@ -186,7 +187,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(361, 24);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(159, 21);
+            this.comboBox2.Size = new System.Drawing.Size(195, 21);
             this.comboBox2.TabIndex = 50;
             // 
             // comboBox4
@@ -222,7 +223,7 @@
             this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(361, 51);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(159, 20);
+            this.textBox3.Size = new System.Drawing.Size(195, 20);
             this.textBox3.TabIndex = 44;
             // 
             // label2
@@ -234,18 +235,17 @@
             this.label2.TabIndex = 45;
             this.label2.Text = "id Compra";
             // 
-            // UIEliminacionCompraMateriaPrima
+            // UIConsultarCompraMateriaPrima
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 323);
+            this.ClientSize = new System.Drawing.Size(811, 299);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.tlsBarraMenu);
             this.MinimumSize = new System.Drawing.Size(577, 150);
-            this.Name = "UIEliminacionCompraMateriaPrima";
+            this.Name = "UIConsultarCompraMateriaPrima";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Eliminación Compra Materia Prima";
-            this.Load += new System.EventHandler(this.FrmProductos_Load);
+            this.Text = "Consultar Compra Materia Prima";
             this.tlsBarraMenu.ResumeLayout(false);
             this.tlsBarraMenu.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -259,9 +259,9 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip tlsBarraMenu;
-        private System.Windows.Forms.ToolStripButton tsbCancelar;
+        private System.Windows.Forms.ToolStripButton tsbBuscar;
         private System.Windows.Forms.ToolStripButton tsbSalir;
-        private System.Windows.Forms.ToolStripButton tsbEliminar;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label3;

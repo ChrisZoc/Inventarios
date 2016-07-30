@@ -71,6 +71,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UIConsultarTipoMateriaPrima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIConsultarTipoMateriaPrima.Designer.cs">
+      <DependentUpon>UIConsultarTipoMateriaPrima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIConsultarCompraMateriaPrima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIConsultarCompraMateriaPrima.Designer.cs">
+      <DependentUpon>UIConsultarCompraMateriaPrima.cs</DependentUpon>
+    </Compile>
     <Compile Include="IProductoService.cs" />
     <Compile Include="SingletonModels\ClienteForm.cs" />
     <Compile Include="SingletonModels\ProductoForm.cs" />
@@ -110,11 +122,11 @@
     <Compile Include="UIIngresoProductoTerminado.Designer.cs">
       <DependentUpon>UIIngresoProductoTerminado.cs</DependentUpon>
     </Compile>
-    <Compile Include="UIGeneracionListaProductoTerminado.cs">
+    <Compile Include="UIGeneracionReporteParaProductoTerminado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UIGeneracionListaProductoTerminado.Designer.cs">
-      <DependentUpon>UIGeneracionListaProductoTerminado.cs</DependentUpon>
+    <Compile Include="UIGeneracionReporteParaProductoTerminado.Designer.cs">
+      <DependentUpon>UIGeneracionReporteParaProductoTerminado.cs</DependentUpon>
     </Compile>
     <Compile Include="UILotizacionMateriaPrima.cs">
       <SubType>Form</SubType>
@@ -122,11 +134,11 @@
     <Compile Include="UILotizacionMateriaPrima.Designer.cs">
       <DependentUpon>UILotizacionMateriaPrima.cs</DependentUpon>
     </Compile>
-    <Compile Include="UIModificacionMateriaPrima.cs">
+    <Compile Include="UIDevolucionMateriaPrima.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UIModificacionMateriaPrima.Designer.cs">
-      <DependentUpon>UIModificacionMateriaPrima.cs</DependentUpon>
+    <Compile Include="UIDevolucionMateriaPrima.Designer.cs">
+      <DependentUpon>UIDevolucionMateriaPrima.cs</DependentUpon>
     </Compile>
     <Compile Include="UIEliminaciónCompraMateriaPrima.cs">
       <SubType>Form</SubType>
@@ -190,6 +202,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UIConsultarTipoMateriaPrima.resx">
+      <DependentUpon>UIConsultarTipoMateriaPrima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIConsultarCompraMateriaPrima.resx">
+      <DependentUpon>UIConsultarCompraMateriaPrima.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIEliminacionProveedor.resx">
       <DependentUpon>UIEliminacionProveedor.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,14 +226,14 @@
     <EmbeddedResource Include="UIIngresoProductoTerminado.resx">
       <DependentUpon>UIIngresoProductoTerminado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UIGeneracionListaProductoTerminado.resx">
-      <DependentUpon>UIGeneracionListaProductoTerminado.cs</DependentUpon>
+    <EmbeddedResource Include="UIGeneracionReporteParaProductoTerminado.resx">
+      <DependentUpon>UIGeneracionReporteParaProductoTerminado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UILotizacionMateriaPrima.resx">
       <DependentUpon>UILotizacionMateriaPrima.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UIModificacionMateriaPrima.resx">
-      <DependentUpon>UIModificacionMateriaPrima.cs</DependentUpon>
+    <EmbeddedResource Include="UIDevolucionMateriaPrima.resx">
+      <DependentUpon>UIDevolucionMateriaPrima.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIEliminaciónCompraMateriaPrima.resx">
       <DependentUpon>UIEliminaciónCompraMateriaPrima.cs</DependentUpon>
