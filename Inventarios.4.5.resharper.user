@@ -1,0 +1,400 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/d:Properties/f:Settings.Designer.cs" caret="0" fromTop="0" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmClientes.Designer.cs" caret="0" fromTop="0" />
+      <File id="4A3A82F3-E668-4481-9365-FE7B2D47FD4D/f:AlmacenORM.cs" caret="0" fromTop="0" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/d:SingletonModels/f:ClienteForm.cs" caret="0" fromTop="0" />
+      <File id="4A3A82F3-E668-4481-9365-FE7B2D47FD4D/f:RuleViolation.cs" caret="0" fromTop="0" />
+      <File id="84C43E37-50C3-48E6-AD15-A5AC17C1E596/f:IProductoService.cs" caret="0" fromTop="0" />
+      <File id="4A3A82F3-E668-4481-9365-FE7B2D47FD4D/f:Producto.cs" caret="0" fromTop="0" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/d:SingletonModels/f:ProductoForm.cs" caret="155" fromTop="6" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmPrincipal.cs" caret="0" fromTop="0" />
+      <File id="9134E842-68AB-4F28-9C56-54681CB62D30/d:Validation/f:ModelStateValidation.cs" caret="0" fromTop="0" />
+      <File id="84C43E37-50C3-48E6-AD15-A5AC17C1E596/f:IClienteService.cs" caret="0" fromTop="0" />
+      <File id="4A3A82F3-E668-4481-9365-FE7B2D47FD4D/f:app.config" caret="0" fromTop="0" />
+      <File id="4A3A82F3-E668-4481-9365-FE7B2D47FD4D/f:Cliente.cs" caret="732" fromTop="23" />
+      <File id="84C43E37-50C3-48E6-AD15-A5AC17C1E596/d:Impl/f:ProductoService.cs" caret="801" fromTop="27" />
+      <File id="84C43E37-50C3-48E6-AD15-A5AC17C1E596/d:Impl/f:ClienteService.cs" caret="1047" fromTop="15" />
+      <File id="4A3A82F3-E668-4481-9365-FE7B2D47FD4D/f:AlmacenORM.designer.cs" caret="3869" fromTop="0" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmProductos.cs" caret="1888" fromTop="52" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmClientes.cs" caret="0" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmProductos.cs" caret="2593" fromTop="0" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmProductos.cs" caret="4094" fromTop="23" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmProductos.cs" caret="4164" fromTop="54" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmPrincipal.cs" caret="190" fromTop="9" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmPrincipal.cs" caret="1191" fromTop="32" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmPrincipal.cs" caret="1175" fromTop="23" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmPrincipal.cs" caret="1066" fromTop="16" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmPrincipal.cs" caret="13" fromTop="0" />
+      <File id="84C43E37-50C3-48E6-AD15-A5AC17C1E596/d:Impl/f:ClienteService.cs" caret="1511" fromTop="13" />
+      <File id="4A3A82F3-E668-4481-9365-FE7B2D47FD4D/f:Cliente.cs" caret="932" fromTop="17" />
+      <File id="4A3A82F3-E668-4481-9365-FE7B2D47FD4D/f:Cliente.cs" caret="732" fromTop="17" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmClientes.cs" caret="1133" fromTop="20" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmClientes.cs" caret="2376" fromTop="24" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmProductos.cs" caret="4156" fromTop="73" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmProductos.cs" caret="2464" fromTop="24" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmProductos.cs" caret="2091" fromTop="14" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmProductos.cs" caret="2354" fromTop="22" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmProductos.cs" caret="2234" fromTop="18" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmProductos.cs" caret="4164" fromTop="85" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmClientes.cs" caret="1787" fromTop="10" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmProductos.cs" caret="13" fromTop="0" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmClientes.cs" caret="5563" fromTop="16" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmClientes.cs" caret="2497" fromTop="18" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmClientes.cs" caret="2497" fromTop="8" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmClientes.cs" caret="5563" fromTop="7" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmClientes.cs" caret="3846" fromTop="24" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmClientes.cs" caret="3503" fromTop="17" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmClientes.cs" caret="3503" fromTop="17" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmClientes.cs" caret="3494" fromTop="16" />
+      <File id="84A5FE4E-DFD6-4030-829E-C9BF92232079/f:FrmClientes.cs" caret="2620" fromTop="4" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="interface" priority="0" />
+      <Item value="int" priority="5" />
+      <Item value="IClienteService" priority="4" />
+      <Item value="readonly" priority="2" />
+      <Item value="AlmacenORMDataContext" priority="11" />
+      <Item value="almacenOrmDataContext" priority="24" />
+      <Item value="new" priority="24" />
+      <Item value="ctor" priority="3" />
+      <Item value="return" priority="3" />
+      <Item value="from" priority="3" />
+      <Item value="select" priority="4" />
+      <Item value="c" priority="4" />
+      <Item value="ClientRectangle" priority="0" />
+      <Item value="this" priority="6" />
+      <Item value="clienteService" priority="7" />
+      <Item value="MessageBox" priority="13" />
+      <Item value="cliente" priority="41" />
+      <Item value="textBox1" priority="0" />
+      <Item value="try" priority="1" />
+      <Item value="e" priority="0" />
+      <Item value="ClienteService" priority="1" />
+      <Item value="x" priority="4" />
+      <Item value="where" priority="2" />
+      <Item value="var" priority="13" />
+      <Item value="prop" priority="1" />
+      <Item value="id" priority="0" />
+      <Item value="Cliente" priority="18" />
+      <Item value="List" priority="0" />
+      <Item value="toar" priority="0" />
+      <Item value="foreach" priority="12" />
+      <Item value="string" priority="4" />
+      <Item value="name" priority="1" />
+      <Item value="dataGridView1" priority="1" />
+      <Item value="sender" priority="0" />
+      <Item value="txtNombre" priority="4" />
+      <Item value="txtDireccion" priority="1" />
+      <Item value="txtRFC" priority="3" />
+      <Item value="dc" priority="0" />
+      <Item value="collection" priority="1" />
+      <Item value="null" priority="3" />
+      <Item value="Type" priority="0" />
+      <Item value="exception" priority="5" />
+      <Item value="LinqToSqlShared" priority="0" />
+      <Item value="Mapping" priority="0" />
+      <Item value="Exception" priority="5" />
+      <Item value="ConflictMode" priority="1" />
+      <Item value="public" priority="0" />
+      <Item value="partial" priority="2" />
+      <Item value="class" priority="0" />
+      <Item value="void" priority="0" />
+      <Item value="ChangeAction" priority="0" />
+      <Item value="if" priority="6" />
+      <Item value="value" priority="0" />
+      <Item value="String" priority="2" />
+      <Item value="throw" priority="0" />
+      <Item value="OnChangeEventHandler" priority="0" />
+      <Item value="cli" priority="0" />
+      <Item value="Nombre" priority="0" />
+      <Item value="RFC" priority="0" />
+      <Item value="Direccion" priority="0" />
+      <Item value="Telefono" priority="0" />
+      <Item value="catch" priority="0" />
+      <Item value="error" priority="2" />
+      <Item value="Control" priority="3" />
+      <Item value="ControlBox" priority="0" />
+      <Item value="Controls" priority="0" />
+      <Item value="errorString" priority="1" />
+      <Item value="FrmClientes" priority="4" />
+      <Item value="frmClientes" priority="1" />
+      <Item value="gpbAlta" priority="3" />
+      <Item value="gpbBusqueda" priority="2" />
+      <Item value="control" priority="9" />
+      <Item value="typeof" priority="1" />
+      <Item value="TextBox" priority="3" />
+      <Item value="GroupBox" priority="1" />
+      <Item value="true" priority="6" />
+      <Item value="groupbox" priority="0" />
+      <Item value="is" priority="1" />
+      <Item value="false" priority="3" />
+      <Item value="txtId" priority="2" />
+      <Item value="errors" priority="0" />
+      <Item value="else" priority="0" />
+      <Item value="static" priority="3" />
+      <Item value="results" priority="0" />
+      <Item value="clientes" priority="2" />
+      <Item value="query" priority="1" />
+      <Item value="lsvClientes" priority="3" />
+      <Item value="ListViewItem" priority="1" />
+      <Item value="item" priority="2" />
+      <Item value="i" priority="0" />
+      <Item value="ToString" priority="0" />
+      <Item value="list" priority="0" />
+      <Item value="counter" priority="4" />
+      <Item value="NoControl" priority="1" />
+      <Item value="txtNoControl" priority="4" />
+      <Item value="Int16" priority="0" />
+      <Item value="Convert" priority="0" />
+      <Item value="DateTime" priority="0" />
+      <Item value="txtTelefono" priority="1" />
+      <Item value="LimpiarControles" priority="0" />
+      <Item value="private" priority="0" />
+      <Item value="noControl" priority="0" />
+      <Item value="tsbGuardar" priority="0" />
+      <Item value="cl" priority="0" />
+      <Item value="updateCliente" priority="1" />
+      <Item value="oldCliente" priority="6" />
+      <Item value="ISingleResult" priority="0" />
+      <Item value="bool" priority="1" />
+      <Item value="IsUpdate" priority="0" />
+      <Item value="cliente1" priority="0" />
+      <Item value="ClienteForm" priority="1" />
+      <Item value="RefreshMode" priority="0" />
+      <Item value="IProductoService" priority="0" />
+      <Item value="Codigo" priority="0" />
+      <Item value="ApellidoPaterno" priority="1" />
+      <Item value="lsvProductos" priority="0" />
+      <Item value="txtApellidoPaterno" priority="0" />
+      <Item value="txtApellidoMaterno" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inventarios.Core.AlmacenORMDataContext">
+      <Item value="Clientes" priority="15" />
+      <Item value="Connection" priority="2" />
+      <Item value="Transaction" priority="1" />
+      <Item value="ChangeConflicts" priority="4" />
+      <Item value="ExecuteQuery" priority="0" />
+      <Item value="GetTable" priority="0" />
+      <Item value="SubmitChanges" priority="0" />
+      <Item value="Refresh" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Linq.Table`1">
+      <Item value="Context" priority="3" />
+      <Item value="Single" priority="0" />
+      <Item value="Select" priority="0" />
+      <Item value="ToList" priority="0" />
+      <Item value="Attach" priority="2" />
+      <Item value="InsertOnSubmit" priority="1" />
+      <Item value="First" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Linq.DataContext">
+      <Item value="Transaction" priority="1" />
+      <Item value="SubmitChanges" priority="0" />
+      <Item value="Mapping" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inventarios.WinForms.Form1">
+      <Item value="clienteService" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inventarios.ApplicationServices.IClienteService">
+      <Item value="GetClienteById" priority="1" />
+      <Item value="GetClientesByName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Common.DbConnection">
+      <Item value="ConnectionString" priority="0" />
+      <Item value="State" priority="1" />
+      <Item value="Open" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show" priority="13" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inventarios.Core.Cliente">
+      <Item value="Nombre" priority="16" />
+      <Item value="Id" priority="2" />
+      <Item value="Direccion" priority="4" />
+      <Item value="RFC" priority="4" />
+      <Item value="Telefono" priority="4" />
+      <Item value="OnValidate" priority="0" />
+      <Item value="PropertyChanging" priority="0" />
+      <Item value="PropertyChanged" priority="0" />
+      <Item value="GetRuleViolations" priority="0" />
+      <Item value="NoControl" priority="8" />
+      <Item value="GetType" priority="0" />
+      <Item value="ApellidoPaterno" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="13" />
+      <Item value="Focus" priority="0" />
+      <Item value="TabIndex" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="1" />
+      <Item value="Data" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="Expression" priority="1" />
+      <Item value="ElementType" priority="0" />
+      <Item value="FirstOrDefault" priority="0" />
+      <Item value="Select" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.Expressions.Expression">
+      <Item value="Type" priority="0" />
+      <Item value="NodeType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="Attributes" priority="2" />
+      <Item value="Assembly" priority="0" />
+      <Item value="ToString" priority="3" />
+      <Item value="TypeHandle" priority="0" />
+      <Item value="MemberType" priority="0" />
+      <Item value="DeclaringType" priority="0" />
+      <Item value="Name" priority="1" />
+      <Item value="GetProperties" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inventarios.ApplicationServices.Impl.ClienteService">
+      <Item value="GetClientes" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridView">
+      <Item value="Columns" priority="0" />
+      <Item value="DataSource" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="GetType" priority="8" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Data.Linq.ConflictMode">
+      <Item value="FailOnFirstConflict" priority="2" />
+      <Item value="ContinueOnConflict" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Common.DbTransaction">
+      <Item value="Commit" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Linq.ObjectChangeConflict">
+      <Item value="MemberConflicts" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Linq.ChangeConflictException">
+      <Item value="Data" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Data.Linq.ChangeAction">
+      <Item value="None" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsNullOrEmpty" priority="0" />
+      <Item value="Empty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Linq.Mapping.MetaModel">
+      <Item value="DatabaseName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inventarios.Core.RuleViolation">
+      <Item value="PropertyName" priority="0" />
+      <Item value="ErrorMessage" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inventarios.WinForms.FrmClientes">
+      <Item value="Close" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.RuntimeTypeHandle">
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IntPtr">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.GroupBox">
+      <Item value="Controls" priority="1" />
+      <Item value="Visible" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Control+ControlCollection">
+      <Item value="Find" priority="1" />
+      <Item value="Contains" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.TypeAttributes">
+      <Item value="GetType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Control">
+      <Item value="Controls" priority="2" />
+      <Item value="Name" priority="2" />
+      <Item value="Text" priority="0" />
+      <Item value="GetNextControl" priority="0" />
+      <Item value="GetType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="ToUpper" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IOrderedQueryable`1">
+      <Item value="ToArray" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListView">
+      <Item value="DataBindings" priority="0" />
+      <Item value="BindingContext" priority="0" />
+      <Item value="Items" priority="3" />
+      <Item value="Columns" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ControlBindingsCollection">
+      <Item value="DefaultDataSourceUpdateMode" priority="0" />
+      <Item value="Control" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListView+ListViewItemCollection">
+      <Item value="Add" priority="1" />
+      <Item value="Clear" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListView+ColumnHeaderCollection">
+      <Item value="Add" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListViewItem+ListViewSubItemCollection">
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListViewItem+ListViewSubItem">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToInt32" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Parse" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolStripButton">
+      <Item value="Enabled" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Inventarios.WinForms.SingletonModels.ClienteForm">
+      <Item value="IsUpdate" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Data.Linq.RefreshMode">
+      <Item value="OverwriteCurrentValues" priority="0" />
+      <Item value="KeepChanges" priority="0" />
+      <Item value="KeepCurrentValues" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.PropertyInfo">
+      <Item value="Attributes" priority="0" />
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inventarios.ApplicationServices.IProductoService">
+      <Item value="GetProductosByName" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
