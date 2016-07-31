@@ -209,7 +209,7 @@
             this.MinimumSize = new System.Drawing.Size(577, 150);
             this.Name = "UIConsultarTipoMateriaPrima";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Consultar Compra Materia Prima";
+            this.Text = "Consultar Tipo Materia Prima";
             this.tlsBarraMenu.ResumeLayout(false);
             this.tlsBarraMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

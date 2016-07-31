@@ -25,12 +25,7 @@ namespace Inventarios.WinForms
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            textBox8.Text = "";
-            textBox9.Text = "";
-            textBox10.Text = "";
-            textBox11.Text = "";
-            textBox12.Text = "";
-            textBox13.Text = "";
+            
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

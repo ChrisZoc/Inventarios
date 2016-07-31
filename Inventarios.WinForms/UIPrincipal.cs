@@ -235,14 +235,7 @@ namespace Inventarios.WinForms
             frmConsultarTipoMateriaPrima.BringToFront();
         }
 
-        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (frmConsultarCompraMateriaPrima == null || frmConsultarCompraMateriaPrima.IsDisposed)
-                frmConsultarCompraMateriaPrima = new UIConsultarCompraMateriaPrima();
-
-            frmConsultarCompraMateriaPrima.Show();
-            frmConsultarCompraMateriaPrima.BringToFront();
-        }
+       
 
         private void ingrerarTipoToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -287,6 +280,17 @@ namespace Inventarios.WinForms
             frmEliminacionProductoTerminado.MdiParent = this;
             frmEliminacionProductoTerminado.Show();
             frmEliminacionProductoTerminado.BringToFront();
+        }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+            if (frmConsultarCompraMateriaPrima == null || frmConsultarCompraMateriaPrima.IsDisposed)
+                frmConsultarCompraMateriaPrima = new UIConsultarCompraMateriaPrima();
+
+            frmConsultarCompraMateriaPrima.Show();
+            frmConsultarCompraMateriaPrima.BringToFront();
+        
         }
     }
 }

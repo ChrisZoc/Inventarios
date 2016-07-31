@@ -20,7 +20,6 @@ namespace Inventarios.WinForms
 
         private void tsbGuardar_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "";
 
         }
 

@@ -55,14 +55,12 @@ namespace Inventarios.WinForms
         private void MostrargpbAltaProductos()
         {
             ProductoForm.IsUpdate = false;
-            gpbAlta.Visible = true;
+          
             tsbCancelar.Enabled = true;
         }
 
         private void MostrargpbBusquedaProductos()
-        {
-            gpbAlta.Visible = false;
-            
+        {            
             tsbCancelar.Enabled = false;
         }
 
