@@ -243,5 +243,50 @@ namespace Inventarios.WinForms
             frmConsultarCompraMateriaPrima.Show();
             frmConsultarCompraMateriaPrima.BringToFront();
         }
+
+        private void ingrerarTipoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ingresoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmIngresoProductoTerminado == null || frmIngresoProductoTerminado.IsDisposed)
+                frmIngresoProductoTerminado = new UIIngresoProductoTerminado();
+
+            frmIngresoProductoTerminado.MdiParent = this;
+            frmIngresoProductoTerminado.Show();
+            frmIngresoProductoTerminado.BringToFront();
+        }
+
+        private void consultaToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            if (frmConsultarProductoTerminado == null || frmConsultarProductoTerminado.IsDisposed)
+                frmConsultarProductoTerminado = new UIConsultarProductoTerminado();
+
+            frmConsultarProductoTerminado.MdiParent = this;
+            frmConsultarProductoTerminado.Show();
+            frmConsultarProductoTerminado.BringToFront();
+        }
+
+        private void modificaciónToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (frmModificaciónProductoTerminado == null || frmModificaciónProductoTerminado.IsDisposed)
+                frmModificaciónProductoTerminado = new UIModificaciónProductoTerminado();
+
+            frmModificaciónProductoTerminado.MdiParent = this;
+            frmModificaciónProductoTerminado.Show();
+            frmModificaciónProductoTerminado.BringToFront();
+        }
+
+        private void eliminaciónToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (frmEliminacionProductoTerminado == null || frmEliminacionProductoTerminado.IsDisposed)
+                frmEliminacionProductoTerminado = new UIEliminacionProductoTerminado();
+
+            frmEliminacionProductoTerminado.MdiParent = this;
+            frmEliminacionProductoTerminado.Show();
+            frmEliminacionProductoTerminado.BringToFront();
+        }
     }
 }

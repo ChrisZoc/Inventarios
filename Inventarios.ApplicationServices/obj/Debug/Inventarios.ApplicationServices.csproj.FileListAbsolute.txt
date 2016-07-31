@@ -33,3 +33,10 @@ C:\Users\Christian\Documents\GitHub\Inventarios\Inventarios.ApplicationServices\
 C:\Users\Christian\Documents\GitHub\Inventarios\Inventarios.ApplicationServices\obj\Debug\Inventarios.ApplicationServices.csprojResolveAssemblyReference.cache
 C:\Users\Christian\Documents\GitHub\Inventarios\Inventarios.ApplicationServices\obj\Debug\Inventarios.ApplicationServices.dll
 C:\Users\Christian\Documents\GitHub\Inventarios\Inventarios.ApplicationServices\obj\Debug\Inventarios.ApplicationServices.pdb
+C:\Users\personal\Documents\GitHub\Inventarios\Inventarios.ApplicationServices\bin\Debug\Inventarios.ApplicationServices.dll
+C:\Users\personal\Documents\GitHub\Inventarios\Inventarios.ApplicationServices\bin\Debug\Inventarios.ApplicationServices.pdb
+C:\Users\personal\Documents\GitHub\Inventarios\Inventarios.ApplicationServices\bin\Debug\Inventarios.Core.dll
+C:\Users\personal\Documents\GitHub\Inventarios\Inventarios.ApplicationServices\bin\Debug\Inventarios.Core.pdb
+C:\Users\personal\Documents\GitHub\Inventarios\Inventarios.ApplicationServices\obj\Debug\Inventarios.ApplicationServices.csprojResolveAssemblyReference.cache
+C:\Users\personal\Documents\GitHub\Inventarios\Inventarios.ApplicationServices\obj\Debug\Inventarios.ApplicationServices.dll
+C:\Users\personal\Documents\GitHub\Inventarios\Inventarios.ApplicationServices\obj\Debug\Inventarios.ApplicationServices.pdb
