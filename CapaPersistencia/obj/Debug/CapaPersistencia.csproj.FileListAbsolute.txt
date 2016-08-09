@@ -1,0 +1,23 @@
+C:\Users\DANNYPAU\Documents\GitHub\Inventarios\CapaPersistencia\bin\Debug\CapaPersistencia.dll.config
+C:\Users\DANNYPAU\Documents\GitHub\Inventarios\CapaPersistencia\bin\Debug\CapaPersistencia.dll
+C:\Users\DANNYPAU\Documents\GitHub\Inventarios\CapaPersistencia\bin\Debug\CapaPersistencia.pdb
+C:\Users\DANNYPAU\Documents\GitHub\Inventarios\CapaPersistencia\bin\Debug\EntityFramework.dll
+C:\Users\DANNYPAU\Documents\GitHub\Inventarios\CapaPersistencia\bin\Debug\EntityFramework.xml
+C:\Users\DANNYPAU\Documents\GitHub\Inventarios\CapaPersistencia\obj\Debug\CapaPersistencia.dll
+C:\Users\DANNYPAU\Documents\GitHub\Inventarios\CapaPersistencia\obj\Debug\CapaPersistencia.pdb
+C:\Users\Rainy\Documents\Quinto Semestre\Propietarios\Inventarios\CapaPersistencia\bin\Debug\CapaPersistencia.dll.config
+C:\Users\Rainy\Documents\Quinto Semestre\Propietarios\Inventarios\CapaPersistencia\bin\Debug\CapaPersistencia.dll
+C:\Users\Rainy\Documents\Quinto Semestre\Propietarios\Inventarios\CapaPersistencia\bin\Debug\CapaPersistencia.pdb
+C:\Users\Rainy\Documents\Quinto Semestre\Propietarios\Inventarios\CapaPersistencia\bin\Debug\EntityFramework.dll
+C:\Users\Rainy\Documents\Quinto Semestre\Propietarios\Inventarios\CapaPersistencia\bin\Debug\EntityFramework.xml
+C:\Users\Rainy\Documents\Quinto Semestre\Propietarios\Inventarios\CapaPersistencia\obj\Debug\CapaPersistencia.csprojResolveAssemblyReference.cache
+C:\Users\Rainy\Documents\Quinto Semestre\Propietarios\Inventarios\CapaPersistencia\obj\Debug\CapaPersistencia.dll
+C:\Users\Rainy\Documents\Quinto Semestre\Propietarios\Inventarios\CapaPersistencia\obj\Debug\CapaPersistencia.pdb
+C:\Users\Christian\Desktop\Inventarios\CapaPersistencia\bin\Debug\CapaPersistencia.dll.config
+C:\Users\Christian\Desktop\Inventarios\CapaPersistencia\bin\Debug\CapaPersistencia.dll
+C:\Users\Christian\Desktop\Inventarios\CapaPersistencia\bin\Debug\CapaPersistencia.pdb
+C:\Users\Christian\Desktop\Inventarios\CapaPersistencia\bin\Debug\EntityFramework.dll
+C:\Users\Christian\Desktop\Inventarios\CapaPersistencia\bin\Debug\EntityFramework.xml
+C:\Users\Christian\Desktop\Inventarios\CapaPersistencia\obj\Debug\CapaPersistencia.csprojResolveAssemblyReference.cache
+C:\Users\Christian\Desktop\Inventarios\CapaPersistencia\obj\Debug\CapaPersistencia.dll
+C:\Users\Christian\Desktop\Inventarios\CapaPersistencia\obj\Debug\CapaPersistencia.pdb

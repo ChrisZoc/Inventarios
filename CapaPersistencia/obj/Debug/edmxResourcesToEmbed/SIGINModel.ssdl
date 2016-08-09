@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SIGINModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="SIGINModelStoreContainer">
+    <EntitySet Name="COMPRADEMATERIAPRIMA" EntityType="SIGINModel.Store.COMPRADEMATERIAPRIMA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DEVOLUCIONDEMATERIAPRIMA" EntityType="SIGINModel.Store.DEVOLUCIONDEMATERIAPRIMA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DEVOLUCIONPRODUCTOTERMINADO" EntityType="SIGINModel.Store.DEVOLUCIONPRODUCTOTERMINADO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LOTE" EntityType="SIGINModel.Store.LOTE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PRODUCTOTERMINADO" EntityType="SIGINModel.Store.PRODUCTOTERMINADO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PROVEEDOR" EntityType="SIGINModel.Store.PROVEEDOR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="SIGINModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TIPOMATERIAPRIMA" EntityType="SIGINModel.Store.TIPOMATERIAPRIMA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TIPOPRODUCTOTERMINADO" EntityType="SIGINModel.Store.TIPOPRODUCTOTERMINADO" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_COMPRADE_RELATIONS_DEVOLUCI" Association="SIGINModel.Store.FK_COMPRADE_RELATIONS_DEVOLUCI">
+      <End Role="DEVOLUCIONDEMATERIAPRIMA" EntitySet="DEVOLUCIONDEMATERIAPRIMA" />
+      <End Role="COMPRADEMATERIAPRIMA" EntitySet="COMPRADEMATERIAPRIMA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_COMPRADE_RELATIONS_LOTE" Association="SIGINModel.Store.FK_COMPRADE_RELATIONS_LOTE">
+      <End Role="LOTE" EntitySet="LOTE" />
+      <End Role="COMPRADEMATERIAPRIMA" EntitySet="COMPRADEMATERIAPRIMA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_COMPRADE_RELATIONS_PROVEEDO" Association="SIGINModel.Store.FK_COMPRADE_RELATIONS_PROVEEDO">
+      <End Role="PROVEEDOR" EntitySet="PROVEEDOR" />
+      <End Role="COMPRADEMATERIAPRIMA" EntitySet="COMPRADEMATERIAPRIMA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_COMPRADE_RELATIONS_TIPOMATE" Association="SIGINModel.Store.FK_COMPRADE_RELATIONS_TIPOMATE">
+      <End Role="TIPOMATERIAPRIMA" EntitySet="TIPOMATERIAPRIMA" />
+      <End Role="COMPRADEMATERIAPRIMA" EntitySet="COMPRADEMATERIAPRIMA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DEVOLUCI_RELATIONS_COMPRADE" Association="SIGINModel.Store.FK_DEVOLUCI_RELATIONS_COMPRADE">
+      <End Role="COMPRADEMATERIAPRIMA" EntitySet="COMPRADEMATERIAPRIMA" />
+      <End Role="DEVOLUCIONDEMATERIAPRIMA" EntitySet="DEVOLUCIONDEMATERIAPRIMA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DEVOLUCI_RELATIONS_PRODUCTO" Association="SIGINModel.Store.FK_DEVOLUCI_RELATIONS_PRODUCTO">
+      <End Role="PRODUCTOTERMINADO" EntitySet="PRODUCTOTERMINADO" />
+      <End Role="DEVOLUCIONPRODUCTOTERMINADO" EntitySet="DEVOLUCIONPRODUCTOTERMINADO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCTO_RELATIONS_DEVOLUCI" Association="SIGINModel.Store.FK_PRODUCTO_RELATIONS_DEVOLUCI">
+      <End Role="DEVOLUCIONPRODUCTOTERMINADO" EntitySet="DEVOLUCIONPRODUCTOTERMINADO" />
+      <End Role="PRODUCTOTERMINADO" EntitySet="PRODUCTOTERMINADO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCTO_RELATIONS_LOTE" Association="SIGINModel.Store.FK_PRODUCTO_RELATIONS_LOTE">
+      <End Role="LOTE" EntitySet="LOTE" />
+      <End Role="PRODUCTOTERMINADO" EntitySet="PRODUCTOTERMINADO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCTO_RELATIONS_TIPOPROD" Association="SIGINModel.Store.FK_PRODUCTO_RELATIONS_TIPOPROD">
+      <End Role="TIPOPRODUCTOTERMINADO" EntitySet="TIPOPRODUCTOTERMINADO" />
+      <End Role="PRODUCTOTERMINADO" EntitySet="PRODUCTOTERMINADO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PROVEEDO_RELATIONS_TIPOMATE" Association="SIGINModel.Store.FK_PROVEEDO_RELATIONS_TIPOMATE">
+      <End Role="TIPOMATERIAPRIMA" EntitySet="TIPOMATERIAPRIMA" />
+      <End Role="PROVEEDOR" EntitySet="PROVEEDOR" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="COMPRADEMATERIAPRIMA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IDDEVOLUCION" Type="int" />
+    <Property Name="IDPROVEEDOR" Type="int" Nullable="false" />
+    <Property Name="IDLOTE" Type="int" Nullable="false" />
+    <Property Name="IDTIPOMATERIAPRIMA" Type="int" Nullable="false" />
+    <Property Name="FECHACOMPRA" Type="datetime" />
+    <Property Name="SEMANACOMPRA" Type="char" MaxLength="30" />
+    <Property Name="ESTADOCOMPRAMATERIAPRIMA" Type="bit" />
+    <Property Name="PRECIOCOMPRAMATERIAPRIMA" Type="money" />
+    <Property Name="PESOCOMPRA" Type="decimal" Precision="3" Scale="3" />
+  </EntityType>
+  <EntityType Name="DEVOLUCIONDEMATERIAPRIMA">
+    <Key>
+      <PropertyRef Name="IDDEVOLUCION" />
+    </Key>
+    <Property Name="IDDEVOLUCION" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="CANTIDADDEVOLUCION" Type="decimal" Precision="3" Scale="3" />
+    <Property Name="RAZONDEVOLUCION" Type="char" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="DEVOLUCIONPRODUCTOTERMINADO">
+    <Key>
+      <PropertyRef Name="IDDEVOLUCIONPROD" />
+    </Key>
+    <Property Name="IDDEVOLUCIONPROD" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IDPRODUCTOTERMINADO" Type="int" Nullable="false" />
+    <Property Name="RAZONDEVOLUCIONPRODUCTO" Type="char" MaxLength="100" />
+    <Property Name="CANTIDADDEVOLUCIONPRODUCTO" Type="decimal" Precision="3" Scale="3" />
+  </EntityType>
+  <EntityType Name="LOTE">
+    <Key>
+      <PropertyRef Name="IDLOTE" />
+    </Key>
+    <Property Name="IDLOTE" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBRE" Type="char" MaxLength="40" />
+    <Property Name="PESO" Type="decimal" Precision="2" Scale="2" />
+  </EntityType>
+  <EntityType Name="PRODUCTOTERMINADO">
+    <Key>
+      <PropertyRef Name="IDPRODUCTOTERMINADO" />
+    </Key>
+    <Property Name="IDPRODUCTOTERMINADO" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IDDEVOLUCIONPROD" Type="int" />
+    <Property Name="IDTIPOPRODUCTOTERMINADO" Type="int" Nullable="false" />
+    <Property Name="IDLOTE" Type="int" />
+    <Property Name="PRECIOTERMINADO" Type="money" />
+    <Property Name="CANTIDADPRODUCTOTERMINADO" Type="decimal" Precision="2" Scale="2" />
+  </EntityType>
+  <EntityType Name="PROVEEDOR">
+    <Key>
+      <PropertyRef Name="IDPROVEEDOR" />
+    </Key>
+    <Property Name="IDPROVEEDOR" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IDTIPOMATERIAPRIMA" Type="int" Nullable="false" />
+    <Property Name="NOMBREPROVEEDOR" Type="char" MaxLength="40" />
+    <Property Name="COMUNIDAD" Type="char" MaxLength="40" />
+    <Property Name="ESTADO" Type="bit" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TIPOMATERIAPRIMA">
+    <Key>
+      <PropertyRef Name="IDTIPOMATERIAPRIMA" />
+    </Key>
+    <Property Name="IDTIPOMATERIAPRIMA" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBRETIPOMATERIAPRIMA" Type="char" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="TIPOPRODUCTOTERMINADO">
+    <Key>
+      <PropertyRef Name="IDTIPOPRODUCTOTERMINADO" />
+    </Key>
+    <Property Name="IDTIPOPRODUCTOTERMINADO" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NOMREPRODUCTOTERMINADO" Type="char" MaxLength="40" />
+  </EntityType>
+  <Association Name="FK_COMPRADE_RELATIONS_DEVOLUCI">
+    <End Role="DEVOLUCIONDEMATERIAPRIMA" Type="SIGINModel.Store.DEVOLUCIONDEMATERIAPRIMA" Multiplicity="0..1" />
+    <End Role="COMPRADEMATERIAPRIMA" Type="SIGINModel.Store.COMPRADEMATERIAPRIMA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEVOLUCIONDEMATERIAPRIMA">
+        <PropertyRef Name="IDDEVOLUCION" />
+      </Principal>
+      <Dependent Role="COMPRADEMATERIAPRIMA">
+        <PropertyRef Name="IDDEVOLUCION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_COMPRADE_RELATIONS_LOTE">
+    <End Role="LOTE" Type="SIGINModel.Store.LOTE" Multiplicity="1" />
+    <End Role="COMPRADEMATERIAPRIMA" Type="SIGINModel.Store.COMPRADEMATERIAPRIMA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOTE">
+        <PropertyRef Name="IDLOTE" />
+      </Principal>
+      <Dependent Role="COMPRADEMATERIAPRIMA">
+        <PropertyRef Name="IDLOTE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_COMPRADE_RELATIONS_PROVEEDO">
+    <End Role="PROVEEDOR" Type="SIGINModel.Store.PROVEEDOR" Multiplicity="1" />
+    <End Role="COMPRADEMATERIAPRIMA" Type="SIGINModel.Store.COMPRADEMATERIAPRIMA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROVEEDOR">
+        <PropertyRef Name="IDPROVEEDOR" />
+      </Principal>
+      <Dependent Role="COMPRADEMATERIAPRIMA">
+        <PropertyRef Name="IDPROVEEDOR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_COMPRADE_RELATIONS_TIPOMATE">
+    <End Role="TIPOMATERIAPRIMA" Type="SIGINModel.Store.TIPOMATERIAPRIMA" Multiplicity="1" />
+    <End Role="COMPRADEMATERIAPRIMA" Type="SIGINModel.Store.COMPRADEMATERIAPRIMA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPOMATERIAPRIMA">
+        <PropertyRef Name="IDTIPOMATERIAPRIMA" />
+      </Principal>
+      <Dependent Role="COMPRADEMATERIAPRIMA">
+        <PropertyRef Name="IDTIPOMATERIAPRIMA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DEVOLUCI_RELATIONS_COMPRADE">
+    <End Role="COMPRADEMATERIAPRIMA" Type="SIGINModel.Store.COMPRADEMATERIAPRIMA" Multiplicity="1" />
+    <End Role="DEVOLUCIONDEMATERIAPRIMA" Type="SIGINModel.Store.DEVOLUCIONDEMATERIAPRIMA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="COMPRADEMATERIAPRIMA">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DEVOLUCIONDEMATERIAPRIMA">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DEVOLUCI_RELATIONS_PRODUCTO">
+    <End Role="PRODUCTOTERMINADO" Type="SIGINModel.Store.PRODUCTOTERMINADO" Multiplicity="1" />
+    <End Role="DEVOLUCIONPRODUCTOTERMINADO" Type="SIGINModel.Store.DEVOLUCIONPRODUCTOTERMINADO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCTOTERMINADO">
+        <PropertyRef Name="IDPRODUCTOTERMINADO" />
+      </Principal>
+      <Dependent Role="DEVOLUCIONPRODUCTOTERMINADO">
+        <PropertyRef Name="IDPRODUCTOTERMINADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCTO_RELATIONS_DEVOLUCI">
+    <End Role="DEVOLUCIONPRODUCTOTERMINADO" Type="SIGINModel.Store.DEVOLUCIONPRODUCTOTERMINADO" Multiplicity="0..1" />
+    <End Role="PRODUCTOTERMINADO" Type="SIGINModel.Store.PRODUCTOTERMINADO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEVOLUCIONPRODUCTOTERMINADO">
+        <PropertyRef Name="IDDEVOLUCIONPROD" />
+      </Principal>
+      <Dependent Role="PRODUCTOTERMINADO">
+        <PropertyRef Name="IDDEVOLUCIONPROD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCTO_RELATIONS_LOTE">
+    <End Role="LOTE" Type="SIGINModel.Store.LOTE" Multiplicity="0..1" />
+    <End Role="PRODUCTOTERMINADO" Type="SIGINModel.Store.PRODUCTOTERMINADO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOTE">
+        <PropertyRef Name="IDLOTE" />
+      </Principal>
+      <Dependent Role="PRODUCTOTERMINADO">
+        <PropertyRef Name="IDLOTE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCTO_RELATIONS_TIPOPROD">
+    <End Role="TIPOPRODUCTOTERMINADO" Type="SIGINModel.Store.TIPOPRODUCTOTERMINADO" Multiplicity="1" />
+    <End Role="PRODUCTOTERMINADO" Type="SIGINModel.Store.PRODUCTOTERMINADO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPOPRODUCTOTERMINADO">
+        <PropertyRef Name="IDTIPOPRODUCTOTERMINADO" />
+      </Principal>
+      <Dependent Role="PRODUCTOTERMINADO">
+        <PropertyRef Name="IDTIPOPRODUCTOTERMINADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PROVEEDO_RELATIONS_TIPOMATE">
+    <End Role="TIPOMATERIAPRIMA" Type="SIGINModel.Store.TIPOMATERIAPRIMA" Multiplicity="1" />
+    <End Role="PROVEEDOR" Type="SIGINModel.Store.PROVEEDOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPOMATERIAPRIMA">
+        <PropertyRef Name="IDTIPOMATERIAPRIMA" />
+      </Principal>
+      <Dependent Role="PROVEEDOR">
+        <PropertyRef Name="IDTIPOMATERIAPRIMA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

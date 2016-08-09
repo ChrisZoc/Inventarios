@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SIGINModelStoreContainer" CdmEntityContainer="SIGINEntities">
+    <EntitySetMapping Name="COMPRADEMATERIAPRIMAs">
+      <EntityTypeMapping TypeName="SIGINModel.COMPRADEMATERIAPRIMA">
+        <MappingFragment StoreEntitySet="COMPRADEMATERIAPRIMA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDDEVOLUCION" ColumnName="IDDEVOLUCION" />
+          <ScalarProperty Name="IDPROVEEDOR" ColumnName="IDPROVEEDOR" />
+          <ScalarProperty Name="IDLOTE" ColumnName="IDLOTE" />
+          <ScalarProperty Name="IDTIPOMATERIAPRIMA" ColumnName="IDTIPOMATERIAPRIMA" />
+          <ScalarProperty Name="FECHACOMPRA" ColumnName="FECHACOMPRA" />
+          <ScalarProperty Name="SEMANACOMPRA" ColumnName="SEMANACOMPRA" />
+          <ScalarProperty Name="ESTADOCOMPRAMATERIAPRIMA" ColumnName="ESTADOCOMPRAMATERIAPRIMA" />
+          <ScalarProperty Name="PRECIOCOMPRAMATERIAPRIMA" ColumnName="PRECIOCOMPRAMATERIAPRIMA" />
+          <ScalarProperty Name="PESOCOMPRA" ColumnName="PESOCOMPRA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEVOLUCIONDEMATERIAPRIMAs">
+      <EntityTypeMapping TypeName="SIGINModel.DEVOLUCIONDEMATERIAPRIMA">
+        <MappingFragment StoreEntitySet="DEVOLUCIONDEMATERIAPRIMA">
+          <ScalarProperty Name="IDDEVOLUCION" ColumnName="IDDEVOLUCION" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CANTIDADDEVOLUCION" ColumnName="CANTIDADDEVOLUCION" />
+          <ScalarProperty Name="RAZONDEVOLUCION" ColumnName="RAZONDEVOLUCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEVOLUCIONPRODUCTOTERMINADOes">
+      <EntityTypeMapping TypeName="SIGINModel.DEVOLUCIONPRODUCTOTERMINADO">
+        <MappingFragment StoreEntitySet="DEVOLUCIONPRODUCTOTERMINADO">
+          <ScalarProperty Name="IDDEVOLUCIONPROD" ColumnName="IDDEVOLUCIONPROD" />
+          <ScalarProperty Name="IDPRODUCTOTERMINADO" ColumnName="IDPRODUCTOTERMINADO" />
+          <ScalarProperty Name="RAZONDEVOLUCIONPRODUCTO" ColumnName="RAZONDEVOLUCIONPRODUCTO" />
+          <ScalarProperty Name="CANTIDADDEVOLUCIONPRODUCTO" ColumnName="CANTIDADDEVOLUCIONPRODUCTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOTEs">
+      <EntityTypeMapping TypeName="SIGINModel.LOTE">
+        <MappingFragment StoreEntitySet="LOTE">
+          <ScalarProperty Name="IDLOTE" ColumnName="IDLOTE" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="PESO" ColumnName="PESO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRODUCTOTERMINADOes">
+      <EntityTypeMapping TypeName="SIGINModel.PRODUCTOTERMINADO">
+        <MappingFragment StoreEntitySet="PRODUCTOTERMINADO">
+          <ScalarProperty Name="IDPRODUCTOTERMINADO" ColumnName="IDPRODUCTOTERMINADO" />
+          <ScalarProperty Name="IDDEVOLUCIONPROD" ColumnName="IDDEVOLUCIONPROD" />
+          <ScalarProperty Name="IDTIPOPRODUCTOTERMINADO" ColumnName="IDTIPOPRODUCTOTERMINADO" />
+          <ScalarProperty Name="IDLOTE" ColumnName="IDLOTE" />
+          <ScalarProperty Name="PRECIOTERMINADO" ColumnName="PRECIOTERMINADO" />
+          <ScalarProperty Name="CANTIDADPRODUCTOTERMINADO" ColumnName="CANTIDADPRODUCTOTERMINADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROVEEDORs">
+      <EntityTypeMapping TypeName="SIGINModel.PROVEEDOR">
+        <MappingFragment StoreEntitySet="PROVEEDOR">
+          <ScalarProperty Name="IDPROVEEDOR" ColumnName="IDPROVEEDOR" />
+          <ScalarProperty Name="IDTIPOMATERIAPRIMA" ColumnName="IDTIPOMATERIAPRIMA" />
+          <ScalarProperty Name="NOMBREPROVEEDOR" ColumnName="NOMBREPROVEEDOR" />
+          <ScalarProperty Name="COMUNIDAD" ColumnName="COMUNIDAD" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="SIGINModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOMATERIAPRIMAs">
+      <EntityTypeMapping TypeName="SIGINModel.TIPOMATERIAPRIMA">
+        <MappingFragment StoreEntitySet="TIPOMATERIAPRIMA">
+          <ScalarProperty Name="IDTIPOMATERIAPRIMA" ColumnName="IDTIPOMATERIAPRIMA" />
+          <ScalarProperty Name="NOMBRETIPOMATERIAPRIMA" ColumnName="NOMBRETIPOMATERIAPRIMA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOPRODUCTOTERMINADOes">
+      <EntityTypeMapping TypeName="SIGINModel.TIPOPRODUCTOTERMINADO">
+        <MappingFragment StoreEntitySet="TIPOPRODUCTOTERMINADO">
+          <ScalarProperty Name="IDTIPOPRODUCTOTERMINADO" ColumnName="IDTIPOPRODUCTOTERMINADO" />
+          <ScalarProperty Name="NOMREPRODUCTOTERMINADO" ColumnName="NOMREPRODUCTOTERMINADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
