@@ -77,8 +77,8 @@
             this.tsbSalir.Image = ((System.Drawing.Image)(resources.GetObject("tsbSalir.Image")));
             this.tsbSalir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSalir.Name = "tsbSalir";
-            this.tsbSalir.Size = new System.Drawing.Size(52, 50);
-            this.tsbSalir.Text = "Salir";
+            this.tsbSalir.Size = new System.Drawing.Size(90, 50);
+            this.tsbSalir.Text = "Regresar";
             this.tsbSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbSalir.ToolTipText = "Cerrar la pantalla actual";
             this.tsbSalir.Click += new System.EventHandler(this.tsbSalir_Click);
@@ -125,6 +125,7 @@
             // rbtNombre
             // 
             this.rbtNombre.AutoSize = true;
+            this.rbtNombre.Checked = true;
             this.rbtNombre.Location = new System.Drawing.Point(49, 37);
             this.rbtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.rbtNombre.Name = "rbtNombre";

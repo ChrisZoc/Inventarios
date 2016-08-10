@@ -4,14 +4,13 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="80b579f357f44fbb8d6b78c3e4f867e2" Name="Diagrama1">
+      <Diagram DiagramId="ae969920bbe246b69fb60c86bb33242b" Name="Diagrama1">
         <EntityTypeShape EntityType="SIGINModel.COMPRADEMATERIAPRIMA" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
         <EntityTypeShape EntityType="SIGINModel.DEVOLUCIONDEMATERIAPRIMA" Width="1.5" PointX="7.5" PointY="6.125" IsExpanded="true" />
         <EntityTypeShape EntityType="SIGINModel.DEVOLUCIONPRODUCTOTERMINADO" Width="1.5" PointX="10.5" PointY="2.125" IsExpanded="true" />
         <EntityTypeShape EntityType="SIGINModel.LOTE" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
         <EntityTypeShape EntityType="SIGINModel.PRODUCTOTERMINADO" Width="1.5" PointX="8.25" PointY="1.625" IsExpanded="true" />
         <EntityTypeShape EntityType="SIGINModel.PROVEEDOR" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="SIGINModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SIGINModel.TIPOMATERIAPRIMA" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SIGINModel.TIPOPRODUCTOTERMINADO" Width="1.5" PointX="6" PointY="2.375" IsExpanded="true" />
         <AssociationConnector Association="SIGINModel.FK_COMPRADE_RELATIONS_DEVOLUCI" ManuallyRouted="false" />

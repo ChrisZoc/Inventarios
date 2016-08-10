@@ -71,6 +71,17 @@ namespace CapaNegocio
 
             return materiaPrima;
         }
+        public TIPOMATERIAPRIMA obtenerTipoMateriaPrimaPorID(TIPOMATERIAPRIMA tipoEntrada) 
+        {
+            Entidades = new SIGINEntities();
+
+            var tipoMP = from st in Entidades.TIPOMATERIAPRIMAs
+                         where st.IDTIPOMATERIAPRIMA == tipoEntrada.IDTIPOMATERIAPRIMA
+                         select st;
+            var materiaPrima = tipoMP.FirstOrDefault<TIPOMATERIAPRIMA>();
+
+            return materiaPrima;
+        }
         public PROVEEDOR ingresoProveedor(PROVEEDOR proveedor)
         {
             Entidades = new SIGINEntities();

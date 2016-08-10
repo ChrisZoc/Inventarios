@@ -25,7 +25,13 @@ namespace Inventarios.WinForms
 
             cmbProveedor.DropDownStyle = ComboBoxStyle.DropDownList;
 
-          //  dgvTablaCompras.Columns[1].Visible = false;
+
+            cmbRazon.Items.Add("Robo");
+            cmbRazon.Items.Add("Caída");
+            cmbRazon.Items.Add("Pérdida");
+            cmbRazon.Items.Add("Daño");
+
+            dgvTablaCompras.Columns[1].Visible = false;
 
         }
 
@@ -40,6 +46,9 @@ namespace Inventarios.WinForms
             txtCantidadInicial.Text = "";
             txtIdCompra2.Text = "";
             txtTipoMateriaPrima.Text = "";
+            txtCantidad.Text = "";
+            txtCantidadInicial.Text = "";
+
 
         }
 
@@ -142,8 +151,13 @@ namespace Inventarios.WinForms
             txtIdCompra1.Text = dgvTablaCompras.Rows[e.RowIndex].Cells[0].Value.ToString();
             txtIdCompra2.Text = dgvTablaCompras.Rows[e.RowIndex].Cells[0].Value.ToString();
             txtIdCompra.Text = dgvTablaCompras.Rows[e.RowIndex].Cells[5].Value.ToString();
-            //txtCantidadInicial.Text = dgvTablaCompras.Rows[e.RowIndex].Cells[9].Value.ToString();
+            txtCantidadInicial.Text = dgvTablaCompras.Rows[e.RowIndex].Cells[9].Value.ToString();
             txtTipoMateriaPrima.Text = dgvTablaCompras.Rows[e.RowIndex].Cells[4].Value.ToString();
+        }
+
+        private void dgvTablaCompras_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -15,7 +15,6 @@ namespace Inventarios.WinForms
         public UIConsultarTipoProductoTerminado()
         {
             InitializeComponent();
-
             gestorTipoProductoTerminado=new GestorTipoProductoTerminado();
         }
 
@@ -28,7 +27,8 @@ namespace Inventarios.WinForms
         {
             txtNombre.Enabled = true;
             txtCodigo.Enabled = false;
-            rbtCodigo.Enabled = false;
+            txtCodigo.Text = "";
+           
 
         }
 
@@ -36,12 +36,15 @@ namespace Inventarios.WinForms
         {
             txtCodigo.Enabled = true;
             txtNombre.Enabled = false;
-            rbtNombre.Enabled = false;
+            txtNombre.Text = "";
+
+         
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             limpiar();
+            dataGridTipoProductoTerminado.DataSource = null;
 
         }
 
@@ -56,6 +59,7 @@ namespace Inventarios.WinForms
             else
             {
                 tipoProductoTerminado.NOMREPRODUCTOTERMINADO = txtNombre.Text;
+                
                 try
                 {
                     dataGridTipoProductoTerminado.DataSource = (gestorTipoProductoTerminado.obtenerListaProductoTerminado(tipoProductoTerminado));
@@ -71,17 +75,20 @@ namespace Inventarios.WinForms
                         dataGridTipoProductoTerminado.DataSource = (gestorTipoProductoTerminado.obtenerListaProductoTerminado(tipoProductoTerminado));
                         
                     }
+                    
                     dataGridTipoProductoTerminado.Columns.RemoveAt(2);
+                    
                 }
                 catch (Exception ex)
                 {
                    }
+                limpiar();
             }  
         }
 
         private void limpiar()
         {
-            rbtNombre.Checked = false;
+            rbtNombre.Checked = true;
             rbtCodigo.Checked = false;
             txtCodigo.Text = "";
             txtNombre.Text = "";
@@ -89,7 +96,7 @@ namespace Inventarios.WinForms
             rbtCodigo.Enabled = true;
             rbtNombre.Enabled = true;
             txtNombre.Enabled = true;
-            txtCodigo.Enabled = true;
+            txtCodigo.Enabled = false;
 
 
         }

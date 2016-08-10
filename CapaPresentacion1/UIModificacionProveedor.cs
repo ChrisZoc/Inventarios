@@ -104,8 +104,10 @@ namespace Inventarios.WinForms
             cbxTipoMP.ValueMember = "IDTIPOMATERIAPRIMA";
             cbxTipoMP.DisplayMember = "NOMBRETIPOMATERIAPRIMA";
             cbxTipoMP.DataSource = gestorProveedor.obtenerListaTipoMateriaPrima();
-            
-            cbxTipoMP.SelectedIndex = Convert.ToInt32(dgvProveedores.Rows[e.RowIndex].Cells[1].Value.ToString()) - 1;
+
+            TIPOMATERIAPRIMA mp = new TIPOMATERIAPRIMA();
+            mp.IDTIPOMATERIAPRIMA = Convert.ToInt32(dgvProveedores.Rows[e.RowIndex].Cells[1].Value.ToString());
+            cbxTipoMP.SelectedIndex = cbxTipoMP.FindStringExact(gestorProveedor.obtenerTipoMateriaPrimaPorID(mp).NOMBRETIPOMATERIAPRIMA);
 
             cbxEstado.Items.Add("Activo");
             cbxEstado.Items.Add("Inactivo");

@@ -21,3 +21,11 @@ C:\Users\Christian\Desktop\Inventarios\CapaPersistencia\bin\Debug\EntityFramewor
 C:\Users\Christian\Desktop\Inventarios\CapaPersistencia\obj\Debug\CapaPersistencia.csprojResolveAssemblyReference.cache
 C:\Users\Christian\Desktop\Inventarios\CapaPersistencia\obj\Debug\CapaPersistencia.dll
 C:\Users\Christian\Desktop\Inventarios\CapaPersistencia\obj\Debug\CapaPersistencia.pdb
+C:\Users\personal\Documents\GitHub\Inventarios\CapaPersistencia\bin\Debug\CapaPersistencia.dll.config
+C:\Users\personal\Documents\GitHub\Inventarios\CapaPersistencia\bin\Debug\CapaPersistencia.dll
+C:\Users\personal\Documents\GitHub\Inventarios\CapaPersistencia\bin\Debug\CapaPersistencia.pdb
+C:\Users\personal\Documents\GitHub\Inventarios\CapaPersistencia\bin\Debug\EntityFramework.dll
+C:\Users\personal\Documents\GitHub\Inventarios\CapaPersistencia\bin\Debug\EntityFramework.xml
+C:\Users\personal\Documents\GitHub\Inventarios\CapaPersistencia\obj\Debug\CapaPersistencia.csprojResolveAssemblyReference.cache
+C:\Users\personal\Documents\GitHub\Inventarios\CapaPersistencia\obj\Debug\CapaPersistencia.dll
+C:\Users\personal\Documents\GitHub\Inventarios\CapaPersistencia\obj\Debug\CapaPersistencia.pdb

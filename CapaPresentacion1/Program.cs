@@ -15,7 +15,7 @@ namespace Inventarios.WinForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UIPrincipal());
+            Application.Run(new Form1());
         }
     }
 }

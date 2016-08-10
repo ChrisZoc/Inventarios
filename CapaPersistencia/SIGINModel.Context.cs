@@ -113,12 +113,6 @@ namespace CapaPersistencia
         }
         private ObjectSet<PROVEEDOR> _pROVEEDORs;
     
-        public ObjectSet<sysdiagram> sysdiagrams
-        {
-            get { return _sysdiagrams  ?? (_sysdiagrams = CreateObjectSet<sysdiagram>("sysdiagrams")); }
-        }
-        private ObjectSet<sysdiagram> _sysdiagrams;
-    
         public ObjectSet<TIPOMATERIAPRIMA> TIPOMATERIAPRIMAs
         {
             get { return _tIPOMATERIAPRIMAs  ?? (_tIPOMATERIAPRIMAs = CreateObjectSet<TIPOMATERIAPRIMA>("TIPOMATERIAPRIMAs")); }

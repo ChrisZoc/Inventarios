@@ -87,9 +87,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SIGINModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagram.cs">
-      <DependentUpon>SIGINModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="TIPOMATERIAPRIMA.cs">
       <DependentUpon>SIGINModel.tt</DependentUpon>
     </Compile>
@@ -106,22 +103,24 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>SIGINModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="SIGINModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>SIGINModel.Context.cs</LastGenOutput>
-      <DependentUpon>SIGINModel.edmx</DependentUpon>
-    </None>
     <None Include="SIGINModel.edmx.diagram">
-      <DependentUpon>SIGINModel.edmx</DependentUpon>
-    </None>
-    <None Include="SIGINModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>SIGINModel.cs</LastGenOutput>
       <DependentUpon>SIGINModel.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SIGINModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SIGINModel.Context.cs</LastGenOutput>
+      <DependentUpon>SIGINModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="SIGINModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SIGINModel.cs</LastGenOutput>
+      <DependentUpon>SIGINModel.edmx</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

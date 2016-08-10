@@ -7,7 +7,6 @@
     <EntitySet Name="LOTEs" EntityType="SIGINModel.LOTE" />
     <EntitySet Name="PRODUCTOTERMINADOes" EntityType="SIGINModel.PRODUCTOTERMINADO" />
     <EntitySet Name="PROVEEDORs" EntityType="SIGINModel.PROVEEDOR" />
-    <EntitySet Name="sysdiagrams" EntityType="SIGINModel.sysdiagram" />
     <EntitySet Name="TIPOMATERIAPRIMAs" EntityType="SIGINModel.TIPOMATERIAPRIMA" />
     <EntitySet Name="TIPOPRODUCTOTERMINADOes" EntityType="SIGINModel.TIPOPRODUCTOTERMINADO" />
     <AssociationSet Name="FK_COMPRADE_RELATIONS_DEVOLUCI" Association="SIGINModel.FK_COMPRADE_RELATIONS_DEVOLUCI">
@@ -129,16 +128,6 @@
     <Property Name="ESTADO" Type="Boolean" />
     <NavigationProperty Name="COMPRADEMATERIAPRIMAs" Relationship="SIGINModel.FK_COMPRADE_RELATIONS_PROVEEDO" FromRole="PROVEEDOR" ToRole="COMPRADEMATERIAPRIMA" />
     <NavigationProperty Name="TIPOMATERIAPRIMA" Relationship="SIGINModel.FK_PROVEEDO_RELATIONS_TIPOMATE" FromRole="PROVEEDOR" ToRole="TIPOMATERIAPRIMA" />
-  </EntityType>
-  <EntityType Name="sysdiagram">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <EntityType Name="TIPOMATERIAPRIMA">
     <Key>

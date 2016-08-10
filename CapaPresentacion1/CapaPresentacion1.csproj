@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UILogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILogin.Designer.cs">
+      <DependentUpon>UILogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="UIEliminaciónTipoProductoTerminado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +208,9 @@
     <Compile Include="UIPrincipal.Designer.cs">
       <DependentUpon>UIPrincipal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UILogin.resx">
+      <DependentUpon>UILogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIEliminaciónTipoProductoTerminado.resx">
       <DependentUpon>UIEliminaciónTipoProductoTerminado.cs</DependentUpon>
     </EmbeddedResource>

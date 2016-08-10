@@ -17,10 +17,7 @@ namespace Inventarios.WinForms
         {
             InitializeComponent();
             gestorTipoMateriaPrima = new GestorTipoMateriaPrima();
-            dataGridTipoMateriaPrima.Visible = false;
-
-
-
+         
 
 
 
@@ -35,10 +32,10 @@ namespace Inventarios.WinForms
 
         private void rbtCodigo_CheckedChanged(object sender, EventArgs e)
         {
-
             txtCodigo.Enabled = true;
-            txtNombre.Enabled = true;
-            rbtNombre.Enabled = false;
+            txtNombre.Enabled = false;
+            txtNombre.Text = "";
+           
 
 
         }
@@ -54,6 +51,7 @@ namespace Inventarios.WinForms
         {
 
             limpiar();
+            dataGridTipoMateriaPrima.DataSource = null;
 
         }
 
@@ -117,14 +115,14 @@ namespace Inventarios.WinForms
         {
             txtNombre.Enabled = true;
             txtCodigo.Enabled = false;
-            rbtCodigo.Enabled = false;
+            txtCodigo.Text = "";
 
 
         }
 
         private void limpiar()
         {
-            rbtNombre.Checked = false;
+            rbtNombre.Checked = true;
             rbtCodigo.Checked = false;
             txtCodigo.Text = "";
             txtNombre.Text = "";
@@ -132,8 +130,7 @@ namespace Inventarios.WinForms
             rbtCodigo.Enabled = true;
             rbtNombre.Enabled = true;
             txtNombre.Enabled = true;
-            txtCodigo.Enabled = true;
-            dataGridTipoMateriaPrima.Visible = false;
+            txtCodigo.Enabled = false;
 
         }
 

@@ -7,7 +7,6 @@
     <EntitySet Name="LOTE" EntityType="SIGINModel.Store.LOTE" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="PRODUCTOTERMINADO" EntityType="SIGINModel.Store.PRODUCTOTERMINADO" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="PROVEEDOR" EntityType="SIGINModel.Store.PROVEEDOR" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="sysdiagrams" EntityType="SIGINModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="TIPOMATERIAPRIMA" EntityType="SIGINModel.Store.TIPOMATERIAPRIMA" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="TIPOPRODUCTOTERMINADO" EntityType="SIGINModel.Store.TIPOPRODUCTOTERMINADO" store:Type="Tables" Schema="dbo" />
     <AssociationSet Name="FK_COMPRADE_RELATIONS_DEVOLUCI" Association="SIGINModel.Store.FK_COMPRADE_RELATIONS_DEVOLUCI">
@@ -112,16 +111,6 @@
     <Property Name="NOMBREPROVEEDOR" Type="char" MaxLength="40" />
     <Property Name="COMUNIDAD" Type="char" MaxLength="40" />
     <Property Name="ESTADO" Type="bit" />
-  </EntityType>
-  <EntityType Name="sysdiagrams">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
-    <Property Name="principal_id" Type="int" Nullable="false" />
-    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="int" />
-    <Property Name="definition" Type="varbinary(max)" />
   </EntityType>
   <EntityType Name="TIPOMATERIAPRIMA">
     <Key>
