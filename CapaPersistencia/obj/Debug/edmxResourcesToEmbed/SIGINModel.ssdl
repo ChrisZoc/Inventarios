@@ -57,13 +57,13 @@
     <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="IDDEVOLUCION" Type="int" />
     <Property Name="IDPROVEEDOR" Type="int" Nullable="false" />
-    <Property Name="IDLOTE" Type="int" Nullable="false" />
+    <Property Name="IDLOTE" Type="int" />
     <Property Name="IDTIPOMATERIAPRIMA" Type="int" Nullable="false" />
     <Property Name="FECHACOMPRA" Type="datetime" />
     <Property Name="SEMANACOMPRA" Type="char" MaxLength="30" />
     <Property Name="ESTADOCOMPRAMATERIAPRIMA" Type="bit" />
     <Property Name="PRECIOCOMPRAMATERIAPRIMA" Type="money" />
-    <Property Name="PESOCOMPRA" Type="decimal" Precision="3" Scale="3" />
+    <Property Name="PESOCOMPRA" Type="numeric" Precision="5" Scale="3" />
   </EntityType>
   <EntityType Name="DEVOLUCIONDEMATERIAPRIMA">
     <Key>
@@ -81,7 +81,7 @@
     <Property Name="IDDEVOLUCIONPROD" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="IDPRODUCTOTERMINADO" Type="int" Nullable="false" />
     <Property Name="RAZONDEVOLUCIONPRODUCTO" Type="char" MaxLength="100" />
-    <Property Name="CANTIDADDEVOLUCIONPRODUCTO" Type="decimal" Precision="3" Scale="3" />
+    <Property Name="CANTIDADDEVOLUCIONPRODUCTO" Type="float" />
   </EntityType>
   <EntityType Name="LOTE">
     <Key>
@@ -99,8 +99,8 @@
     <Property Name="IDDEVOLUCIONPROD" Type="int" />
     <Property Name="IDTIPOPRODUCTOTERMINADO" Type="int" Nullable="false" />
     <Property Name="IDLOTE" Type="int" />
-    <Property Name="PRECIOTERMINADO" Type="money" />
-    <Property Name="CANTIDADPRODUCTOTERMINADO" Type="decimal" Precision="2" Scale="2" />
+    <Property Name="PRECIOTERMINADO" Type="float" />
+    <Property Name="CANTIDADPRODUCTOTERMINADO" Type="int" />
   </EntityType>
   <EntityType Name="PROVEEDOR">
     <Key>
@@ -139,7 +139,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_COMPRADE_RELATIONS_LOTE">
-    <End Role="LOTE" Type="SIGINModel.Store.LOTE" Multiplicity="1" />
+    <End Role="LOTE" Type="SIGINModel.Store.LOTE" Multiplicity="0..1" />
     <End Role="COMPRADEMATERIAPRIMA" Type="SIGINModel.Store.COMPRADEMATERIAPRIMA" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="LOTE">

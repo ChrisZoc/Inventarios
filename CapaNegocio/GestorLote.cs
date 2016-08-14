@@ -35,6 +35,21 @@ namespace CapaNegocio
             return lstLotes;
 
         }
+        public LOTE obtenerLote(LOTE tipoEntrada)
+        {
 
+            entidades = new SIGINEntities();
+
+            var L2EQuery = from st in entidades.LOTEs
+                           where st.IDLOTE == tipoEntrada.IDLOTE
+                           select st;
+            var TIPO = L2EQuery.FirstOrDefault<LOTE>();
+
+
+
+            Console.Write(TIPO);
+            return TIPO;
+
+        }
     }
 }

@@ -57,13 +57,13 @@
     <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
     <Property Name="IDDEVOLUCION" Type="Int32" />
     <Property Name="IDPROVEEDOR" Type="Int32" Nullable="false" />
-    <Property Name="IDLOTE" Type="Int32" Nullable="false" />
+    <Property Name="IDLOTE" Type="Int32" />
     <Property Name="IDTIPOMATERIAPRIMA" Type="Int32" Nullable="false" />
     <Property Name="FECHACOMPRA" Type="DateTime" Precision="3" />
     <Property Name="SEMANACOMPRA" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
     <Property Name="ESTADOCOMPRAMATERIAPRIMA" Type="Boolean" />
     <Property Name="PRECIOCOMPRAMATERIAPRIMA" Type="Decimal" Precision="19" Scale="4" />
-    <Property Name="PESOCOMPRA" Type="Decimal" Precision="3" Scale="3" />
+    <Property Name="PESOCOMPRA" Type="Decimal" Precision="5" Scale="3" />
     <NavigationProperty Name="DEVOLUCIONDEMATERIAPRIMA" Relationship="SIGINModel.FK_COMPRADE_RELATIONS_DEVOLUCI" FromRole="COMPRADEMATERIAPRIMA" ToRole="DEVOLUCIONDEMATERIAPRIMA" />
     <NavigationProperty Name="LOTE" Relationship="SIGINModel.FK_COMPRADE_RELATIONS_LOTE" FromRole="COMPRADEMATERIAPRIMA" ToRole="LOTE" />
     <NavigationProperty Name="PROVEEDOR" Relationship="SIGINModel.FK_COMPRADE_RELATIONS_PROVEEDO" FromRole="COMPRADEMATERIAPRIMA" ToRole="PROVEEDOR" />
@@ -88,7 +88,7 @@
     <Property Name="IDDEVOLUCIONPROD" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
     <Property Name="IDPRODUCTOTERMINADO" Type="Int32" Nullable="false" />
     <Property Name="RAZONDEVOLUCIONPRODUCTO" Type="String" MaxLength="100" Unicode="false" FixedLength="true" />
-    <Property Name="CANTIDADDEVOLUCIONPRODUCTO" Type="Decimal" Precision="3" Scale="3" />
+    <Property Name="CANTIDADDEVOLUCIONPRODUCTO" Type="Double" />
     <NavigationProperty Name="PRODUCTOTERMINADO" Relationship="SIGINModel.FK_DEVOLUCI_RELATIONS_PRODUCTO" FromRole="DEVOLUCIONPRODUCTOTERMINADO" ToRole="PRODUCTOTERMINADO" />
     <NavigationProperty Name="PRODUCTOTERMINADOes" Relationship="SIGINModel.FK_PRODUCTO_RELATIONS_DEVOLUCI" FromRole="DEVOLUCIONPRODUCTOTERMINADO" ToRole="PRODUCTOTERMINADO" />
   </EntityType>
@@ -110,8 +110,8 @@
     <Property Name="IDDEVOLUCIONPROD" Type="Int32" />
     <Property Name="IDTIPOPRODUCTOTERMINADO" Type="Int32" Nullable="false" />
     <Property Name="IDLOTE" Type="Int32" />
-    <Property Name="PRECIOTERMINADO" Type="Decimal" Precision="19" Scale="4" />
-    <Property Name="CANTIDADPRODUCTOTERMINADO" Type="Decimal" Precision="2" Scale="2" />
+    <Property Name="PRECIOTERMINADO" Type="Double" />
+    <Property Name="CANTIDADPRODUCTOTERMINADO" Type="Int32" />
     <NavigationProperty Name="DEVOLUCIONPRODUCTOTERMINADOes" Relationship="SIGINModel.FK_DEVOLUCI_RELATIONS_PRODUCTO" FromRole="PRODUCTOTERMINADO" ToRole="DEVOLUCIONPRODUCTOTERMINADO" />
     <NavigationProperty Name="DEVOLUCIONPRODUCTOTERMINADO" Relationship="SIGINModel.FK_PRODUCTO_RELATIONS_DEVOLUCI" FromRole="PRODUCTOTERMINADO" ToRole="DEVOLUCIONPRODUCTOTERMINADO" />
     <NavigationProperty Name="LOTE" Relationship="SIGINModel.FK_PRODUCTO_RELATIONS_LOTE" FromRole="PRODUCTOTERMINADO" ToRole="LOTE" />
@@ -159,7 +159,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_COMPRADE_RELATIONS_LOTE">
-    <End Role="LOTE" Type="SIGINModel.LOTE" Multiplicity="1" />
+    <End Role="LOTE" Type="SIGINModel.LOTE" Multiplicity="0..1" />
     <End Role="COMPRADEMATERIAPRIMA" Type="SIGINModel.COMPRADEMATERIAPRIMA" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="LOTE">

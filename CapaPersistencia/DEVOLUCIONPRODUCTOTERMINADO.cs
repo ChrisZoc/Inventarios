@@ -81,7 +81,7 @@ namespace CapaPersistencia
         private string _rAZONDEVOLUCIONPRODUCTO;
     
         [DataMember]
-        public Nullable<decimal> CANTIDADDEVOLUCIONPRODUCTO
+        public Nullable<double> CANTIDADDEVOLUCIONPRODUCTO
         {
             get { return _cANTIDADDEVOLUCIONPRODUCTO; }
             set
@@ -93,7 +93,7 @@ namespace CapaPersistencia
                 }
             }
         }
-        private Nullable<decimal> _cANTIDADDEVOLUCIONPRODUCTO;
+        private Nullable<double> _cANTIDADDEVOLUCIONPRODUCTO;
 
         #endregion
 

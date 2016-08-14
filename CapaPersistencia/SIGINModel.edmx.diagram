@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="ae969920bbe246b69fb60c86bb33242b" Name="Diagrama1">
+      <Diagram DiagramId="c0ca2ed088f749caafdbdefff7f08341" Name="Diagrama1">
         <EntityTypeShape EntityType="SIGINModel.COMPRADEMATERIAPRIMA" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
         <EntityTypeShape EntityType="SIGINModel.DEVOLUCIONDEMATERIAPRIMA" Width="1.5" PointX="7.5" PointY="6.125" IsExpanded="true" />
         <EntityTypeShape EntityType="SIGINModel.DEVOLUCIONPRODUCTOTERMINADO" Width="1.5" PointX="10.5" PointY="2.125" IsExpanded="true" />

@@ -92,7 +92,7 @@ namespace CapaPersistencia
         private int _iDPROVEEDOR;
     
         [DataMember]
-        public int IDLOTE
+        public Nullable<int> IDLOTE
         {
             get { return _iDLOTE; }
             set
@@ -112,7 +112,7 @@ namespace CapaPersistencia
                 }
             }
         }
-        private int _iDLOTE;
+        private Nullable<int> _iDLOTE;
     
         [DataMember]
         public int IDTIPOMATERIAPRIMA
@@ -450,7 +450,7 @@ namespace CapaPersistencia
             }
         }
     
-        private void FixupLOTE(LOTE previousValue)
+        private void FixupLOTE(LOTE previousValue, bool skipKeys = false)
         {
             if (IsDeserializing)
             {
@@ -468,6 +468,11 @@ namespace CapaPersistencia
     
                 IDLOTE = LOTE.IDLOTE;
             }
+            else if (!skipKeys)
+            {
+                IDLOTE = null;
+            }
+    
             if (ChangeTracker.ChangeTrackingEnabled)
             {
                 if (ChangeTracker.OriginalValues.ContainsKey("LOTE")

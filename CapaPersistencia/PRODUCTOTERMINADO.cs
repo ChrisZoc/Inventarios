@@ -114,7 +114,7 @@ namespace CapaPersistencia
         private Nullable<int> _iDLOTE;
     
         [DataMember]
-        public Nullable<decimal> PRECIOTERMINADO
+        public Nullable<double> PRECIOTERMINADO
         {
             get { return _pRECIOTERMINADO; }
             set
@@ -126,10 +126,10 @@ namespace CapaPersistencia
                 }
             }
         }
-        private Nullable<decimal> _pRECIOTERMINADO;
+        private Nullable<double> _pRECIOTERMINADO;
     
         [DataMember]
-        public Nullable<decimal> CANTIDADPRODUCTOTERMINADO
+        public Nullable<int> CANTIDADPRODUCTOTERMINADO
         {
             get { return _cANTIDADPRODUCTOTERMINADO; }
             set
@@ -141,7 +141,7 @@ namespace CapaPersistencia
                 }
             }
         }
-        private Nullable<decimal> _cANTIDADPRODUCTOTERMINADO;
+        private Nullable<int> _cANTIDADPRODUCTOTERMINADO;
 
         #endregion
 

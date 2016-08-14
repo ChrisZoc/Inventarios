@@ -179,5 +179,10 @@ namespace Inventarios.WinForms
         {
             limpiar();
         }
+
+        private void dgvProveedores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

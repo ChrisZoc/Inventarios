@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GestorDevolucionProducto.cs" />
+    <Compile Include="GestorProductoTerminado.cs" />
     <Compile Include="GestorCompraMateriaPrima.cs" />
     <Compile Include="GestorLote.cs" />
     <Compile Include="GestorProveedor.cs" />
