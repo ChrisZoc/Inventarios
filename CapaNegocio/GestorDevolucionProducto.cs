@@ -41,7 +41,7 @@ namespace CapaNegocio
             entidades = new SIGINEntities();
 
             var L2EQuery = from st in entidades.DEVOLUCIONPRODUCTOTERMINADOes
-                           where st.IDDEVOLUCIONPROD == tipoEntrada.IDDEVOLUCIONPROD
+                           where st.IDPRODUCTOTERMINADO == tipoEntrada.IDPRODUCTOTERMINADO
                            select st;
             var TIPO = L2EQuery.FirstOrDefault<DEVOLUCIONPRODUCTOTERMINADO>();
 
@@ -49,6 +49,18 @@ namespace CapaNegocio
 
             Console.Write(TIPO);
             return TIPO;
+
+        }
+        public void EliminarDevolucion(DEVOLUCIONPRODUCTOTERMINADO tipoEntrada)
+        {
+     
+            using (var entidades = new SIGINEntities())
+            {
+                entidades.DEVOLUCIONPRODUCTOTERMINADOes.Attach(tipoEntrada);
+
+                entidades.DeleteObject(tipoEntrada);
+                entidades.SaveChanges();
+            }
 
         }
     }

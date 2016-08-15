@@ -128,14 +128,7 @@ namespace Inventarios.WinForms
                 cboxTipo.SelectedIndex = cboxTipo.FindStringExact(gestorTipoProductoTerminado.obtenerTipoProductoTerminado(pt).NOMREPRODUCTOTERMINADO);
                 cboxLote.SelectedIndex = cboxLote.FindStringExact(gestorLote.obtenerLote(lt).NOMBRE);
                 GestorDevolucionProducto gestorDevolucion=new GestorDevolucionProducto();
-                if (dp.IDDEVOLUCIONPROD.ToString().Equals("0"))
-                {
-                    cboxRazon.SelectedIndex = 0;
-                }
-                else {
-                    cboxRazon.SelectedIndex = cboxRazon.FindStringExact(gestorDevolucion.obtenerDevolucion(dp).RAZONDEVOLUCIONPRODUCTO);
-                    txtCantidadPerdida.Text = gestorDevolucion.obtenerDevolucion(dp).CANTIDADDEVOLUCIONPRODUCTO.ToString();
-                }
+                
                
             }  
         }
@@ -170,33 +163,52 @@ namespace Inventarios.WinForms
 
                     PRODUCTOTERMINADO productoTerminado = new PRODUCTOTERMINADO();
                     GestorDevolucionProducto gestorDevolucionProducto = new GestorDevolucionProducto();
+                    productoTerminado.IDPRODUCTOTERMINADO = Convert.ToInt32(txtCodigo.Text);
                     productoTerminado.IDTIPOPRODUCTOTERMINADO = Convert.ToInt32(cboxTipo.SelectedValue.ToString());
                     productoTerminado.IDLOTE = Convert.ToInt32(cboxLote.SelectedValue.ToString());
                     productoTerminado.PRECIOTERMINADO = Convert.ToDouble(txtPrecio.Text);
-                    productoTerminado.CANTIDADPRODUCTOTERMINADO = Convert.ToInt32(txtCantidadActual.Text);
+                    
 
                     if ((!cboxRazon.Text.Trim().Equals("")) && txtCantidadPerdida.Equals(""))
                     {
                         MessageBox.Show("No se ha escogido la cantidad perdida de Producto Terminado", "Información", MessageBoxButtons.OK);
                     }
-                    else
+                    else if((!cboxRazon.Text.Trim().Equals("")) && (!txtCantidadPerdida.Equals("")))
                     {
                         DEVOLUCIONPRODUCTOTERMINADO devolucionProductoTerminado = new DEVOLUCIONPRODUCTOTERMINADO();
                         devolucionProductoTerminado.RAZONDEVOLUCIONPRODUCTO = cboxRazon.Text;
                         devolucionProductoTerminado.CANTIDADDEVOLUCIONPRODUCTO = Convert.ToDouble(txtCantidadPerdida.Text);
                         devolucionProductoTerminado.IDPRODUCTOTERMINADO = Convert.ToInt32(txtIdProducto.Text);
                         devolucionProductoTerminado = gestorDevolucionProducto.ingresoDevolucionProductoTerminado(devolucionProductoTerminado);
-                        productoTerminado.IDDEVOLUCIONPROD = devolucionProductoTerminado.IDDEVOLUCIONPROD;
+                        
+                            productoTerminado.CANTIDADPRODUCTOTERMINADO = Convert.ToInt32(txtCantidadActual.Text) - Convert.ToInt32(txtCantidadPerdida.Text);
+                            productoTerminado.IDDEVOLUCIONPROD = devolucionProductoTerminado.IDDEVOLUCIONPROD;
+                        
+                        
                     }
-
-                    gestorProductoTerminado.ActualizarNombreProductoTerminado(productoTerminado);
-                    txtPrecio.Text = productoTerminado.PRECIOTERMINADO.ToString();
-                    txtCantidadActual.Text = productoTerminado.CANTIDADPRODUCTOTERMINADO.ToString();
-
-                    if ((MessageBox.Show("Registrado con éxito", "Información", MessageBoxButtons.OK)) == DialogResult.OK)
+                    if (Convert.ToInt32(txtCantidadPerdida.Text) > 0)
                     {
-                        // limpiar();
+                        if (productoTerminado.CANTIDADPRODUCTOTERMINADO > 0)
+                        {
+                            gestorProductoTerminado.ActualizarNombreProductoTerminado(productoTerminado);
+                            txtPrecio.Text = productoTerminado.PRECIOTERMINADO.ToString();
+                            txtCantidadActual.Text = productoTerminado.CANTIDADPRODUCTOTERMINADO.ToString();
+                            if ((MessageBox.Show("Registrado con éxito", "Información", MessageBoxButtons.OK)) == DialogResult.OK)
+                            {
+                                // limpiar();
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("La cantidad perdida de Producto Terminado es mayor a la cantidad Actual", "Error", MessageBoxButtons.OK);
+                        }
                     }
+                    else {
+                        MessageBox.Show("La cantidad perdida de Producto Terminado no puede ser un valor negativo", "Error", MessageBoxButtons.OK);
+                    }
+                   
+
+                    
                 }
             }
         }

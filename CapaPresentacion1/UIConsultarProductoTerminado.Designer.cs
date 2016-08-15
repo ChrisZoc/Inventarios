@@ -102,9 +102,9 @@
             this.Buscar.Controls.Add(this.rbtCodigo);
             this.Buscar.Controls.Add(this.rbtNombre);
             this.Buscar.Location = new System.Drawing.Point(16, 79);
-            this.Buscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Buscar.Margin = new System.Windows.Forms.Padding(4);
             this.Buscar.Name = "Buscar";
-            this.Buscar.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Buscar.Padding = new System.Windows.Forms.Padding(4);
             this.Buscar.Size = new System.Drawing.Size(988, 114);
             this.Buscar.TabIndex = 32;
             this.Buscar.TabStop = false;
@@ -113,7 +113,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(171, 68);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigo.Mask = "99";
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(132, 22);
@@ -122,7 +122,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(171, 36);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Mask = "LLLLLLLLLLLLLLLL";
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(132, 22);
@@ -132,11 +132,10 @@
             // 
             this.rbtCodigo.AutoSize = true;
             this.rbtCodigo.Location = new System.Drawing.Point(49, 69);
-            this.rbtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.rbtCodigo.Name = "rbtCodigo";
             this.rbtCodigo.Size = new System.Drawing.Size(99, 21);
             this.rbtCodigo.TabIndex = 3;
-            this.rbtCodigo.TabStop = true;
             this.rbtCodigo.Text = "Por Código";
             this.rbtCodigo.UseVisualStyleBackColor = true;
             this.rbtCodigo.CheckedChanged += new System.EventHandler(this.rbtCodigo_CheckedChanged);
@@ -144,8 +143,9 @@
             // rbtNombre
             // 
             this.rbtNombre.AutoSize = true;
+            this.rbtNombre.Checked = true;
             this.rbtNombre.Location = new System.Drawing.Point(49, 37);
-            this.rbtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.rbtNombre.Name = "rbtNombre";
             this.rbtNombre.Size = new System.Drawing.Size(105, 21);
             this.rbtNombre.TabIndex = 2;
@@ -159,7 +159,7 @@
             this.dataGridProductoTerminado.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridProductoTerminado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridProductoTerminado.Location = new System.Drawing.Point(16, 215);
-            this.dataGridProductoTerminado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridProductoTerminado.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridProductoTerminado.Name = "dataGridProductoTerminado";
             this.dataGridProductoTerminado.Size = new System.Drawing.Size(988, 145);
             this.dataGridProductoTerminado.TabIndex = 33;
@@ -172,7 +172,7 @@
             this.Controls.Add(this.dataGridProductoTerminado);
             this.Controls.Add(this.Buscar);
             this.Controls.Add(this.tlsBarraMenu);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(763, 174);
             this.Name = "UIConsultarProductoTerminado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

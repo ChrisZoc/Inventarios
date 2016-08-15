@@ -121,10 +121,16 @@ namespace CapaNegocio
 
         public void ActualizarNombreProductoTerminado(PRODUCTOTERMINADO tipoEntrada)
         {
-            
-            using (var entidades = new SIGINEntities())
+
+            var producto = new PRODUCTOTERMINADO { IDPRODUCTOTERMINADO = tipoEntrada.IDPRODUCTOTERMINADO};
+            using (entidades = new SIGINEntities())
             {
-                entidades.PRODUCTOTERMINADOes.Attach(tipoEntrada);
+                entidades.PRODUCTOTERMINADOes.Attach(producto);
+                producto.IDDEVOLUCIONPROD= tipoEntrada.IDDEVOLUCIONPROD;
+                producto.IDTIPOPRODUCTOTERMINADO= tipoEntrada.IDTIPOPRODUCTOTERMINADO;
+                producto.IDLOTE = tipoEntrada.IDLOTE;
+                producto.PRECIOTERMINADO = tipoEntrada.PRECIOTERMINADO;
+                producto.CANTIDADPRODUCTOTERMINADO = tipoEntrada.CANTIDADPRODUCTOTERMINADO;
                 entidades.SaveChanges();
             }
         }
@@ -134,6 +140,7 @@ namespace CapaNegocio
             using (var entidades = new SIGINEntities())
             {
                 entidades.PRODUCTOTERMINADOes.Attach(tipoEntrada);
+                
                 entidades.DeleteObject(tipoEntrada);
                 entidades.SaveChanges();
             }

@@ -63,7 +63,7 @@ namespace Inventarios.WinForms
             txtIdTipoProductoTerminado.Text = cbxNombreTipoProductoTerminado.SelectedValue.ToString();
 
 
-            tipo_recuperado = gestorTipoProductoTerminado.obtenerTipoProductoTerminado(tipo);
+            tipo_recuperado = gestorTipoProductoTerminado.ingresoTipoProductoTerminado(tipo);
 
             txtIdTipoProductoTerminado.Text = Convert.ToString(tipo_recuperado.IDTIPOPRODUCTOTERMINADO);
             try
